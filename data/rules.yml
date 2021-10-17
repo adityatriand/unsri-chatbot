@@ -14,5 +14,5 @@ rules:
 
   - rule: handle out of intent
     steps:
-    - intent: nlu_fallback
+    - intent: out_of_intent
     - action: utter_respon_failed

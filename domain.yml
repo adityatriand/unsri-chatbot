@@ -3,6 +3,7 @@ version: "2.0"
 intents:
   - chitchat
   - faq
+  - out_of_intent
 
 responses:
   utter_chitchat/greet:
@@ -16,11 +17,42 @@ responses:
     - text: Saya akan membantu menjawab kebingungan Anda seputar Universitas Sriwijaya
     - text: Saya dibuat untuk menjawab pertanyaan seputar Universitas Sriwijaya
 
-  utter_faq/ask_visi_unsri:
+  utter_faq/ask_visi:
     - text: Visi Universitas Sriwijaya adalah menjadi perguruan tinggi terkemuka dan berbasis riset yang unggul dalam bidang ilmu pengetahuan dan teknologi
 
-  utter_faq/ask_singkatan_unsri:
-    - text: Universitas Sriwijaya
+  utter_faq/ask_jumlah_fakultas:
+    - text: Jumlah fakultas di Universitas Sriwijaya ada 12 Fakultas
+
+  utter_faq/ask_fakultas:
+    - text: |
+        1.  Fakultas Ekonomi (FE)
+        2.  Fakultas Hukum (FH)
+        3.  Fakultas Teknik (FT)
+        4.  Fakultas Kedokteran (FK)
+        5.  Fakultas Pertanian (FP)
+        6.  Fakultas Keguruan Dan Ilmu Pendidikan (FKIP)
+        7.  Fakultas Ilmu Sosial Dan Ilmu Politik (FISIP)
+        8.  Fakultas Matematika Dan Ilmu Pengetahuan Alam (FMIPA)
+        9.  Fakultas Ilmu Komputer (Fasilkom)
+        10. Fakultas Kesehatan Masyarakat (FKM)
+        11. Program Pascasarjana
+        12. Program Profesi
+
+  utter_faq/ask_jumlah_jurusan_fakultas_ekonomi:
+    - text: Jumlah jurusan Fakultas Ekonomi ada 10
+
+  utter_faq/ask_jurusan_fakultas_ekonomi:
+    - text: |
+        1.  Manajemen : Sarjana
+        2.  Ekonomi Pembangunan : Sarjana
+        3.  Akuntansi  : Sarjana
+        4.  Vokasi Akuntansi : Diploma Tiga
+        5.  Vokasi Kesekretariatan : Diploma Tiga
+        6.  Megister manajemen : Magister
+        7.  Ilmu Ekonomi : Magister
+        8.  Ilmu Manajemen : Magister
+        9.  Ilmu Ekonomi : Doktor
+        10. Manajemen  : Doktor
 
   utter_respon_failed:
     - text: Maaf permintaan anda belum dapat diproses
