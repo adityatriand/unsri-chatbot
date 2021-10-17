@@ -47,12 +47,42 @@ nlu:
       - jumlah jurusan di fakultas ekonomi
       - berapa banyak jurusan di fakultas ekonomi ?
       - ada berapa jumlah jurusan di fakultas ekonomi ?
+      - jumlah jurusan di FE unsri
 
   - intent: faq/ask_jurusan_fakultas_ekonomi
     examples: |
       - sebutkan jurusan yang ada di fakultas ekonomi ?
       - jurusan di fakultas ekonomi
       - jurusan ekonomi
+      - jurusan di FE
+
+  - intent: faq/ask_jumlah_jurusan_fakultas_hukum
+    examples: |
+      - jumlah jurusan di fakultas hukum
+      - berapa banyak jurusan di fakultas hukum
+      - ada berapa jumlah jurusan di fakultas hukum
+      - jumlah jurusan di FH unsri
+
+  - intent: faq/ask_jurusan_fakultas_hukum
+    examples: |
+      - sebutkan jurusan yang ada di fakultas hukum ?
+      - jurusan di fakultas hukum
+      - jurusan hukum
+      - jurusan di FH
+
+  - intent: faq/ask_jumlah_jurusan_fakultas_teknik
+      examples: |
+        - jumlah jurusan di fakultas teknik
+        - berapa banyak jurusan di fakultas teknik
+        - ada berapa jumlah jurusan di fakultas teknik
+        - jumlah jurusan di FT unsri
+
+  - intent: faq/ask_jurusan_fakultas_teknik
+    examples: |
+      - sebutkan jurusan yang ada di fakultas teknik ?
+      - jurusan di fakultas teknik
+      - jurusan teknik
+      - jurusan di FT
 
   - intent: out_of_intent
     examples: |

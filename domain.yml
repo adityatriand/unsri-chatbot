@@ -54,6 +54,34 @@ responses:
         9.  Ilmu Ekonomi : Doktor
         10. Manajemen  : Doktor
 
+  utter_faq/ask_jumlah_jurusan_fakultas_hukum:
+    - text: Jumlah jurusan Fakultas Hukum ada 4
+
+  utter_faq/ask_jurusan_fakultas_hukum:
+    - text: |
+        1.  Ilmu Hukum : Sarjana
+        2.  Ilmu Hukum : Magister
+        3.  Kenotariatan : Magister
+        4.  Ilmu Hukum : Doktor
+
+  utter_faq/ask_jumlah_jurusan_fakultas_teknik:
+    - text: Jumlah jurusan Fakultas Teknik ada 12
+
+  utter_faq/ask_jurusan_fakultas_teknik:
+    - text: |
+        1.  Teknik Sipil : Sarjana
+        2.  Teknik Pertambangan : Sarjana
+        3.  Teknik Kimia : Sarjana
+        4.  Teknik Elektro : Sarjana
+        5.  Teknik Mesin : Sarjana
+        6.  Arsitektur : Sarjana
+        7.  Teknik Geologi : Sarjana
+        8.  Teknik Kimia : Magister
+        9.  Teknik Sipil : Magister
+        10. Teknik Mesin : Magister
+        11. Teknik Pertambangan : Magister
+        12. Ilmu Teknik : Doktor
+
   utter_respon_failed:
     - text: Maaf permintaan anda belum dapat diproses
 
