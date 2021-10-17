@@ -54,7 +54,7 @@ nlu:
       - jurusan di fakultas ekonomi
       - jurusan ekonomi
 
-  - intent: out_of_indent
+  - intent: out_of_intent
     examples: |
       - sejarah universitas sriwijaya
       - makna lambang universitas sriwijaya
