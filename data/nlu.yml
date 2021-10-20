@@ -310,6 +310,52 @@ nlu:
       - siapa sekretaris lembaga pengembangan pembelajaran dan penjaminan mutu pendidikan di universitas sriwijaya
       - sekretaris lp3mp unsri
 
+  - intent: faq/ask_ujian_saringan_masuk_diploma
+    examples: |
+      - Bagaimana ketentuan ujian saringan masuk untuk program Diploma unsri?
+      - Ketentuan ujian saringan masuk untuk program Diploma Universitas Sriwijaya
+
+  - intent: faq/ask_ujian_saringan_masuk_pascasarjana_spesialis_profesi
+    examples: |
+      - Bagaimana ketentuan ujian saringan masuk untuk Program Pascasarjana, Spesialis dan Profesi Unsri?
+      - Ketentuan Ujian saringan masuk untuk Program Pascasarjana, Spesialis dan Profesi Universitas Sriwijaya
+
+  - intent: faq/ask_beasiswa
+    examples: |
+      - Ketentuan Beasiswa KIP Kuliah Universitas Sriwijaya
+      - Cara mendapatkan Beasiswa KIP Kuliah Universitas Sriwijaya
+      - Bagaimana cara mendapatkan beasiswa KIP Kuliah Unsri ?
+
+  - intent: faq/ask_pendaftaran_ulang_maba
+    examples: |
+      - Bagaimana cara mendaftar ulang bagi mahasiswa baru unsri ?
+      - Pendaftaran Ulang bagi Mahasiswa Baru universitas sriwijaya
+      - Ketentuan Pendaftaran Ulang Mahasiswa Baru universitas sriwijaya
+
+  - intent: faq/ask_prosedur_mahasiswa_asing_di_unsri
+    examples: |
+      - Bagaimana prosedur mahasiswa asing yang kuliah di unsri?
+      - Prosedur mahasiswa asing yang kuliah di universitas sriwijaya
+
+  - intent: faq/ask_nim
+    examples: |
+      - Apa itu NIM
+      - Kenapa ada NIM di Universitas Sriwijaya
+      - NIM di Unsri
+      - Surat Keputusan NIM di Unsri
+
+  - intent: faq/ask_kode_nim
+    examples: |
+      - Bagaimana sistem pengkodean untuk NIM di Unsri?
+      - Sistem pengkodean NIM di Universitas Sriwijaya
+      - Cara pengkodean NIM di Unsri
+
+  - intent: faq/ask_sistem_penyelenggaraan_pendidikan
+    examples: |
+      - Bagaimana Sistem Penyelenggaraan Pendidikan di Unsri?
+      - Sistem Penyelenggaraan Pendidikan di Unversitas Sriwijaya
+      - Apa saja sistem penyelenggaraan pendidikan yang ada di unsri ?
+
   - intent: out_of_intent
     examples: |
       - sejarah universitas sriwijaya
