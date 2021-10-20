@@ -86,13 +86,30 @@ nlu:
 
   - intent: faq/ask_ujian_saringan_masuk_diploma
     examples: |
-      - Bagaimana ketentuan ujian saringan masuk untuk program Diploma ?
-      - Ketentuan ujian saringan masuk untuk program Diploma
+      - Bagaimana ketentuan ujian saringan masuk untuk program Diploma unsri?
+      - Ketentuan ujian saringan masuk untuk program Diploma Universitas Sriwijaya
 
   - intent: faq/ask_ujian_saringan_masuk_pascasarjana_spesialis_profesi
     examples: |
-      - Bagaimana ketentuan ujian saringan masuk untuk Program Pascasarjana, Spesialis dan Profesi?
-      - Ketentuan Ujian saringan masuk untuk Program Pascasarjana, Spesialis dan Profesi
+      - Bagaimana ketentuan ujian saringan masuk untuk Program Pascasarjana, Spesialis dan Profesi Unsri?
+      - Ketentuan Ujian saringan masuk untuk Program Pascasarjana, Spesialis dan Profesi Universitas Sriwijaya
+
+  - intent: faq/ask_beasiswa
+    examples: |
+      - Ketentuan Beasiswa KIP Kuliah Universitas Sriwijaya
+      - Cara mendapatkan Beasiswa KIP Kuliah Universitas Sriwijaya
+      - Bagaimana cara mendapatkan beasiswa KIP Kuliah Unsri ?
+
+  - intent: faq/ask_pendaftaran_ulang_maba
+    examples: |
+      - Bagaimana cara mendaftar ulang bagi mahasiswa baru unsri ?
+      - Pendaftaran Ulang bagi Mahasiswa Baru universitas sriwijaya
+      - Ketentuan Pendaftaran Ulang Mahasiswa Baru universitas sriwijaya
+
+  - intent: faq/ask_prosedur_mahasiswa_asing_di_unsri
+    examples: |
+      - Bagaimana prosedur mahasiswa asing yang kuliah di unsri?
+      - Prosedur mahasiswa asing yang kuliah di universitas sriwijaya
 
   - intent: out_of_intent
     examples: |
