@@ -122,6 +122,27 @@ responses:
         5. Semua surat yang dikeluarkan dari Universitas Sriwijaya ke instansi lain untuk keperluan mahasiswa asing ditandatangani oleh Rektor atau Pejabat yang diberi kewenangan  minimal setara dengan Eselon 2 (dua) sesuai SK Rektor Universitas Sriwijaya No.261 /UN9/DT.Kep/2016
         6. Penerimaan mahasiswa asing ke Universitas Sriwijaya diatur tersendiri dalam Peraturan Rektor
 
+  utter_faq/ask_nim:
+    - text : |
+        NIM ditetapkan berdasarkan pengkodean yang tertuang dalam Surat Keputusan Rektor Universitas Sriwijaya Nomor:122/UN9/DT.Kep/2013 tanggal 27 Mei 2013
+
+  utter_faq/ask_kode_nim:
+    - text : |
+        1. Fakultas/Program (2 digit)
+        2. Program Studi (2 digit)
+        3. Program Pendidikan (1 digit)
+        4. Jalur Masuk (1 digit)
+        5. Bulan Masuk (1 digit)
+        6. Tahun Masuk (2 digit)
+        7. Tahun Batas Akhir Masa Studi (2 digit)
+        8. Nomor Urut Pendaftaran (3 digit)
+        9. NIM memiliki total 14 digit angka
+
+  utter_faq/ask_sistem_penyelenggaraan_pendidikan:
+    - text : |
+        1. Sistem Kredit Semester (SKS)
+        2. Satuan Kredit Semester (sks)
+        3. Satu Satuan Kredit Semester (1 sks)
 
   utter_respon_failed:
     - text: Maaf permintaan anda belum dapat diproses
