@@ -20,6 +20,28 @@ nlu:
       - Kamu bisa apa ?
       - Bisa apa kamu ?
       - Kegunaanmu untuk apa ?
+      - Manfaat kamu
+
+  - intent: faq/ask_visi
+    examples: |
+      - sebutkan visi unsri ?
+      - visi universitas sriwijaya
+      - apa visi unsri ?
+      - sebutkan visi universitas sriwijaya ?
+
+  - intent: faq/ask_misi
+    examples: |
+      - sebutkan misi unsri ?
+      - misi universitas sriwijaya
+      - apa misi unsri ?
+      - sebutkan misi universitas sriwijaya ?
+
+  - intent: faq/ask_tujuan
+    examples: |
+      - sebutkan tujuan unsri ?
+      - tujuan universitas sriwijaya
+      - apa tujuan unsri ?
+      - sebutkan tujuan universitas sriwijaya ?
 
   - intent: faq/ask_visi
     examples: |
@@ -83,6 +105,210 @@ nlu:
       - jurusan di fakultas teknik
       - jurusan teknik
       - jurusan di FT
+
+  - intent: faq/ask_jumlah_jurusan_fakultas_kedokteran
+    examples: |
+      - jumlah jurusan di fakultas kedokteran
+      - berapa banyak jurusan di fakultas kedokteran
+      - ada berapa jumlah jurusan di fakultas kedokteran
+      - jumlah jurusan di FK unsri
+
+  - intent: faq/ask_jurusan_fakultas_kedokteran
+    examples: |
+      - sebutkan jurusan yang ada di fakultas kedokteran ?
+      - jurusan di fakultas kedokteran
+      - jurusan kedokteran
+      - jurusan di FK
+
+  - intent: faq/ask_jumlah_jurusan_fakultas_pertanian
+    examples: |
+      - jumlah jurusan di fakultas pertanian
+      - berapa banyak jurusan di fakultas pertanian
+      - ada berapa jumlah jurusan di fakultas pertanian
+      - jumlah jurusan di FP unsri
+
+  - intent: faq/ask_jurusan_fakultas_pertanian
+    examples: |
+      - sebutkan jurusan yang ada di fakultas pertanian ?
+      - jurusan di fakultas pertanian
+      - jurusan pertanian
+      - jurusan di FP
+
+  - intent: faq/ask_jumlah_jurusan_fakultas_keguruan
+    examples: |
+      - jumlah jurusan di fakultas keguruan dan ilmu pendidikan
+      - berapa banyak jurusan di fakultas keguruan
+      - ada berapa jumlah jurusan di fakultas ilmu pendidikan
+      - jumlah jurusan di FKIP unsri
+
+  - intent: faq/ask_jurusan_fakultas_keguruan
+    examples: |
+      - sebutkan jurusan yang ada di fakultas keguruan dan ilmu pendidikan ?
+      - jurusan di fakultas keguruan dan ilmu pendidikan
+      - jurusan keguruan
+      - jurusan di FKIP
+
+  - intent: faq/ask_jumlah_jurusan_fakultas_ilmu_sosial_dan_ilmu_politik
+    examples: |
+      - jumlah jurusan di fakultas ilmu sosial dan ilmu politik
+      - berapa banyak jurusan di fakultas ilmu sosial dan ilmu politik
+      - ada berapa jumlah jurusan di fakultas ilmu sosial dan ilmu politik
+      - jumlah jurusan di FISIP unsri
+
+  - intent: faq/ask_jurusan_fakultas_ilmu_sosial_dan_ilmu_politik
+    examples: |
+      - sebutkan jurusan yang ada di fakultas ilmu sosial dan ilmu politik ?
+      - jurusan di fakultas ilmu sosial dan ilmu politik
+      - jurusan ilmu sosial dan ilmu politik
+      - jurusan di FISIP
+
+  - intent: faq/ask_jumlah_jurusan_fakultas_matematika_dan_ilmu_pengetahuan_alam
+    examples: |
+      - jumlah jurusan di fakultas matematika dan ilmu pengetahuan alam
+      - berapa banyak jurusan di fakultas matematika dan ilmu pengetahuan alam
+      - ada berapa jumlah jurusan di fakultas matematika dan ilmu pengetahuan alam
+      - jumlah jurusan di FMIPA unsri
+
+  - intent: faq/ask_jurusan_fakultas_matematika_dan_ilmu_pengetahuan_alam
+    examples: |
+      - sebutkan jurusan yang ada di fakultas matematika dan ilmu pengetahuan alam ?
+      - jurusan di fakultas matematika dan ilmu pengetahuan alam
+      - jurusan matematika dan ilmu pengetahuan alam
+      - jurusan di FMIPA
+
+  - intent: faq/ask_jumlah_jurusan_fakultas_ilmu_komputer
+    examples: |
+      - jumlah jurusan di fakultas ilmu komputer
+      - berapa banyak jurusan di fakultas ilmu komputer ?
+      - ada berapa jumlah jurusan di fakultas ilmu komputer
+      - jumlah jurusan di FASILKOM unsri
+
+  - intent: faq/ask_jurusan_fakultas_ilmu_komputer
+    examples: |
+      - sebutkan jurusan yang ada di fakultas ilmu komputer ?
+      - jurusan di fakultas ilmu komputer
+      - jurusan ilmu komputer
+      - jurusan di FASILKOM
+
+  - intent: faq/ask_jumlah_jurusan_fakultas_kesehatan_masyarakat
+    examples: |
+      - jumlah jurusan di fakultas kesehatan masyarakat
+      - berapa banyak jurusan di fakultas kesehatan masyarakat ?
+      - ada berapa jumlah jurusan di fakultas kesehatan masyarakat
+      - jumlah jurusan di FKM unsri
+
+  - intent: faq/ask_jurusan_fakultas_kesehatan_masyarakat
+    examples: |
+      - sebutkan jurusan yang ada di fakultas kesehatan masyarakat ?
+      - jurusan di fakultas kesehatan masyarakat
+      - jurusan kesehatan masyarakat
+      - jurusan di FKM
+
+  - intent: faq/ask_jumlah_jurusan_program_pascasarjana
+    examples: |
+      - jumlah jurusan di program pascasarjana
+      - berapa banyak jurusan di program pascasarjana ?
+      - ada berapa jumlah jurusan di program pascasarjana
+      - jumlah jurusan di program pascasarjana unsri
+
+  - intent: faq/ask_jurusan_program_pascasarjana
+    examples: |
+      - sebutkan jurusan yang ada di program pascasarjana ?
+      - jurusan di program pascasarjana
+      - jurusan program pascasarjana
+
+  - intent: faq/ask_jumlah_jurusan_program_profesi
+    examples: |
+      - jumlah jurusan di program profesi
+      - berapa banyak jurusan di program profesi ?
+      - ada berapa jumlah jurusan di program profesi
+      - jumlah jurusan di program profesi unsri
+
+  - intent: faq/ask_jurusan_program_profesi
+    examples: |
+      - sebutkan jurusan yang ada di program profesi ?
+      - jurusan di program profesi
+      - jurusan program profesi
+
+  - intent: faq/ask_repelita
+    examples: |
+      - rencana pembangunan 5 tahun unsri
+      - bagaimana repelita universitas sriwijaya
+      - strategi apa yang unsri rencanakan untuk pembangunan 5 tahun kedepan
+      - rencana pembangunan universitas sriwijaya 5 tahun yang akan datang
+
+  - intent: faq/ask_pimpinan_dan_spi
+    examples: |
+      - pimpinan universitas sriwijaya
+      - satuan pengawas internal
+      - SPI Universitas Sriwijaya
+      - siapa saja pimpinan di universitas sriwijaya
+      - sebutkan pengawas internal unsri
+      - pimpinan serta satuan pengawas internal di universitas sriwijaya
+
+  - intent: faq/ask_rektor
+    examples: |
+      - nama rektor universitas sriwijaya
+      - siapa rektor universitas sriwijaya
+      - rektor
+      - rektor unsri
+      - sebtukan rektor unsri ?
+
+  - intent: faq/ask_wakil_rektor_I
+    examples: |
+      - nama wakil rektor I universitas sriwijaya
+      - siapa wakil rektor I universitas sriwijaya
+      - wakil rektor I
+      - wakil rektor I unsri
+      - sebtukan wakil rektor I unsri ?
+
+  - intent: faq/ask_wakil_rektor_II
+    examples: |
+      - nama wakil rektor II universitas sriwijaya
+      - siapa wakil rektor II universitas sriwijaya
+      - wakil rektor II
+      - wakil rektor II unsri
+      - sebtukan wakil rektor II unsri ?
+
+  - intent: faq/ask_wakil_rektor_III
+    examples: |
+      - nama wakil rektor III universitas sriwijaya
+      - siapa wakil rektor III universitas sriwijaya
+      - wakil rektor III
+      - wakil rektor III unsri
+      - sebtukan wakil rektor III unsri ?
+
+  - intent: faq/ask_wakil_rektor_IV
+    examples: |
+      - nama wakil rektor IV universitas sriwijaya
+      - siapa wakil rektor IV universitas sriwijaya
+      - wakil rektor IV
+      - wakil rektor IV unsri
+      - sebtukan wakil rektor IV unsri ?
+
+  - intent: faq/ask_ketua_lp2m
+    examples: |
+      - nama ketua lp2m universitas sriwijaya
+      - siapa ketua lembaga penelitian dan pengabdian kepada masyarakat di universitas sriwijaya
+      - ketua lp2m unsri
+
+  - intent: faq/ask_sekretaris_lp2m
+    examples: |
+      - nama sekretaris lp2m universitas sriwijaya
+      - siapa sekretaris lembaga penelitian dan pengabdian kepada masyarakat di universitas sriwijaya
+      - sekretaris lp2m unsri
+
+  - intent: faq/ask_ketua_lp3mp
+    examples: |
+      - nama ketua lp3mp universitas sriwijaya
+      - siapa ketua lembaga pengembangan pembelajaran dan penjaminan mutu pendidikan di universitas sriwijaya
+      - ketua lp3mp unsri
+
+  - intent: faq/ask_sekretaris_lp3mp
+    examples: |
+      - nama sekretaris lp3mp universitas sriwijaya
+      - siapa sekretaris lembaga pengembangan pembelajaran dan penjaminan mutu pendidikan di universitas sriwijaya
+      - sekretaris lp3mp unsri
 
   - intent: faq/ask_ujian_saringan_masuk_diploma
     examples: |
