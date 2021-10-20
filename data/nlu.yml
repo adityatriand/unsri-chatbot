@@ -71,7 +71,7 @@ nlu:
       - jurusan di FH
 
   - intent: faq/ask_jumlah_jurusan_fakultas_teknik
-      examples: |
+    examples: |
         - jumlah jurusan di fakultas teknik
         - berapa banyak jurusan di fakultas teknik
         - ada berapa jumlah jurusan di fakultas teknik
