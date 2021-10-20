@@ -21,8 +21,9 @@ responses:
     - text: Visi Universitas Sriwijaya adalah menjadi perguruan tinggi terkemuka dan berbasis riset yang unggul dalam bidang ilmu pengetahuan dan teknologi
 
   utter_faq/ask_misi:
-    - text: Misi Universitas Sriwijaya adalah
-      |
+    - text: |
+        Misi Universitas Sriwijaya adalah
+
         1. Menyelenggarakan dan mengembangkan pendidikan tinggi dalam upaya menghasilkan manusia  terdidik yang dapat menerapkan, mengembangkan, dan/atau menciptakan ilmu pengetahuan dan/atau teknologi
         2. Menyelenggarakan dan mengembangkan penelitian dalam rangka meningkatkan kualitas pembelajaran, ilmu pengetahuan dan/atau teknologi, serta memiliki nilai aplikasi dalam pembangunan.
         3. Menyelenggarakan dan mengembangkan pengabdian kepada masyarakat dengan menerapkan ilmu pengetahuan dan/atau teknologi untuk mewujudkan kemajuan dan kesejahteraan masyarakat.
@@ -31,7 +32,9 @@ responses:
         6. Mewujudkan sistem manajemen perguruan tinggi yang profesional, efektif, efisien, dan akuntabel.
 
  utter_faq/ask_tujuan:
-   - text: Tujuan Universitas Sriwijaya adalah |
+   - text: |
+      Tujuan Universitas Sriwijaya adalah
+
       1. Menghasilkan lulusan yang berakhlak mulia, berkualitas dan mandiri.
       2. Menghasilkan pengetahuan empiris, teoritis, dan konseptual, dalam bidang ilmu pengetahuan, teknologi dan atau seni.
       3. Menghasilkan teknologi unggul dan tepat guna
@@ -44,7 +47,9 @@ responses:
     - text: Jumlah fakultas di Universitas Sriwijaya ada 12 Fakultas
 
   utter_faq/ask_fakultas:
-    - text: Berikut fakultas yang ada di Universitas Sriwijaya |
+    - text: |
+        Berikut fakultas yang ada di Universitas Sriwijaya
+
         1.  Fakultas Ekonomi (FE)
         2.  Fakultas Hukum (FH)
         3.  Fakultas Teknik (FT)
@@ -62,8 +67,9 @@ responses:
     - text: Jumlah jurusan Fakultas Ekonomi ada 10
 
   utter_faq/ask_jurusan_fakultas_ekonomi:
-    - text: Berikut jurusan yang ada di Fakultas Ekonomi Universitas Sriwijaya
-      |
+    - text: |
+        Berikut jurusan yang ada di Fakultas Ekonomi Universitas Sriwijaya
+
         1.  Manajemen : Sarjana
         2.  Ekonomi Pembangunan : Sarjana
         3.  Akuntansi  : Sarjana
@@ -79,8 +85,9 @@ responses:
     - text: Jumlah jurusan Fakultas Hukum ada 4
 
   utter_faq/ask_jurusan_fakultas_hukum:
-    - text: Berikut jurusan yang ada di Fakultas Hukum Universitas Sriwijaya
-      |
+    - text: |
+        Berikut jurusan yang ada di Fakultas Hukum Universitas Sriwijaya
+
         1.  Ilmu Hukum : Sarjana
         2.  Ilmu Hukum : Magister
         3.  Kenotariatan : Magister
@@ -90,8 +97,9 @@ responses:
     - text: Jumlah jurusan Fakultas Teknik Universitas Sriwijaya ada 12
 
   utter_faq/ask_jurusan_fakultas_teknik:
-    - text: Berikut jurusan yang ada di Fakultas Teknik Universitas Sriwijaya
-      |
+    - text: |
+        Berikut jurusan yang ada di Fakultas Teknik Universitas Sriwijaya
+
         1.  Teknik Sipil : Sarjana
         2.  Teknik Pertambangan : Sarjana
         3.  Teknik Kimia : Sarjana
@@ -109,8 +117,9 @@ responses:
     - text: Jumlah jurusan Fakultas Kedokteran Universitas Sriwijaya ada 17
 
   utter_faq/ask_jurusan_fakultas_kedokteran:
-    - text: Berikut jurusan yang ada di Fakultas Kedokteran Universitas Sriwijaya
-      |
+    - text: |
+        Berikut jurusan yang ada di Fakultas Kedokteran Universitas Sriwijaya
+
         1.  Pendidikan Dokter: Sarjana
         2.  Keperawatan: Sarjana
         3.  Kedokteran Gigi: Sarjana
@@ -133,8 +142,9 @@ responses:
     - text: Jumlah jurusan Fakultas Pertanian Universitas Sriwijaya ada 13
 
   utter_faq/ask_jurusan_fakultas_pertanian:
-    - text: Berikut jurusan yang ada di Fakultas Pertanian Universitas Sriwijaya
-      |
+    - text: |
+        Berikut jurusan yang ada di Fakultas Pertanian Universitas Sriwijaya
+
         1.  Agribisnis : Sarjana
         2.  Teknik Pertanian : Sarjana
         3.  Teknologi Hasil Pertanian : Sarjana
@@ -153,8 +163,9 @@ responses:
     - text: Jumlah jurusan Fakultas Keguruan dan Ilmu Pendidikan Universitas Sriwijaya ada 22
 
   utter_faq/ask_jurusan_fakultas_keguruan:
-    - text: Berikut jurusan yang ada di Fakultas Keguruan dan Ilmu Pendidikan Universitas Sriwijaya
-      |
+    - text: |
+        Berikut jurusan yang ada di Fakultas Keguruan dan Ilmu Pendidikan Universitas Sriwijaya
+
         1.  Pendidikan Bahasa Inggris : Sarjana
         2.  Pendidikan Bahasa dan Sastra Indonesia : Sarjana
         3.  Pendidikan Pancasila dan Kewarganegaraan : Sarjana
@@ -182,8 +193,9 @@ responses:
     - text: Jumlah jurusan Fakultas Ilmu Sosial dan Ilmu Politik ada 7
 
   utter_faq/ask_jurusan_fakultas_ilmu_sosial_dan_ilmu_politik:
-    - text: Berikut jurusan yang ada di Fakultas Ilmu Sosial dan Ilmu Politik Universitas Sriwijaya
-      |
+    - text: |
+        Berikut jurusan yang ada di Fakultas Ilmu Sosial dan Ilmu Politik Universitas Sriwijaya
+
         1. Administrasi Publik : sarjana
         2. Sosiologi : Sarjana
         3. Ilmu Komunikasi : Sarjana
@@ -196,8 +208,9 @@ responses:
     - text: Jumlah jurusan Fakultas Matematika dan Ilmu Pengetahuan Universitas Sriwijaya ada 10
 
   utter_faq/ask_jurusan_fakultas_matematika_dan_ilmu_pengetahuan:
-    - text: Berikut jurusan yang ada di Fakultas Matematika dan Ilmu Pengetahuan Universitas Sriwijaya
-      |
+    - text: |
+        Berikut jurusan yang ada di Fakultas Matematika dan Ilmu Pengetahuan Universitas Sriwijaya
+
         1.  Matematika : Sarjana
         2.  Fisika : Sarjana
         3.  Kimia : Sarjana
@@ -213,8 +226,9 @@ responses:
     - text: Jumlah jurusan Fakultas Ilmu Komputer Universitas Sriwijaya ada 7
 
   utter_faq/ask_jurusan_fakultas_ilmu_komputer:
-    - text: Berikut jurusan yang ada di Fakultas Ilmu Komputer Universitas Sriwijaya
-      |
+    - text: |
+        Berikut jurusan yang ada di Fakultas Ilmu Komputer Universitas Sriwijaya
+
         1.  Komputerisasi Akuntansi : Diploma Tiga
         2.  Manajemen Informatika : Diploma Tiga
         3.  Teknik Komputer : Diploma Tiga
@@ -227,8 +241,9 @@ responses:
     - text: Jumlah jurusan Fakultas Kesehatan Masyarakat Universitas Sriwijaya ada 4
 
   utter_faq/ask_jurusan_fakultas_kesehatan_masyarakat:
-    - text: Berikut jurusan yang ada di Fakultas Kesehatan Masyarakat Universitas Sriwijaya
-      |
+    - text: |
+        Berikut jurusan yang ada di Fakultas Kesehatan Masyarakat Universitas Sriwijaya
+
         1.  Ilmu Kesehatan Masyarakat: Sarjana
         2.  Ilmu Kesehatan Masyarakat: Magister
         3.  Gizi : Sarjana
@@ -238,8 +253,9 @@ responses:
     - text: Jumlah jurusan Program Pascasarjana Universitas Sriwijaya ada 3
 
   utter_faq/ask_jurusan_program_pascasarjana:
-    - text: Berikut jurusan yang ada di Fakultas Kesehatan Masyarakat Universitas Sriwijaya
-      |
+    - text: |
+        Berikut jurusan yang ada di Fakultas Kesehatan Masyarakat Universitas Sriwijaya
+
         1.  Pengelolaan Lingkungan : Magister
         2.  Kependudukan : Magister
         3.  Ilmu Lingkungan : Doktor
@@ -248,8 +264,9 @@ responses:
     - text: Jumlah jurusan Program Profesi Universitas Sriwijaya ada 5
 
   utter_faq/ask_jurusan_program_profesi:
-    - text: Berikut jurusan yang ada di Program Profesi Universitas Sriwijaya
-      |
+    - text: |
+        Berikut jurusan yang ada di Program Profesi Universitas Sriwijaya
+
         1.  Akuntansi : Profesi
         2.  Profesi Dokter : Profesi
         3.  Profesi Ners : Profesi
@@ -257,8 +274,9 @@ responses:
         5.  Profesi Pendidikan Guru
 
   utter_faq/ask_repelita:
-    - text: Startegi pembangunan Universitas Sriwijaya menuju 5 tahun kedepan sebagai berikut
-      |
+    - text: |
+       Startegi pembangunan Universitas Sriwijaya menuju 5 tahun kedepan sebagai berikut
+
        1.  Pemerataan dan perluasan akses pendidikan
        2.  Peningkatan Mutu, relevansi dan daya saing
        3.  Penguatan tata kelola, Akuntabilitas dan pencitraan publik
@@ -266,8 +284,9 @@ responses:
        5.  Globalisasi dan daya saing
 
   utter_faq/ask_pimpinan_unsri_dan_spi:
-   - text: Berikut nama nama pimpinan dan satuan pengawas internal (SPI)
-    |
+   - text: |
+       Berikut nama nama pimpinan dan satuan pengawas internal (SPI)
+
        1. Rektor            : Prof.Dr. Ir. H. Anis Saggaff, MSCE
        2. Wakil Rektor I    : Prof. Ir. Zainuddin Nawawi, Ph.D
        3. Wakil Rektor II   : Prof. Dr. Taufik Marwah, M. Si
