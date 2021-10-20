@@ -21,14 +21,70 @@ nlu:
       - Bisa apa kamu ?
       - Kegunaanmu untuk apa ?
 
-  - intent: faq/ask_visi_unsri
+  - intent: faq/ask_visi
     examples: |
       - sebutkan visi unsri ?
       - visi universitas sriwijaya
       - apa visi unsri ?
       - sebutkan visi universitas sriwijaya ?
 
-  - intent: faq/ask_singkatan_unsri
+  - intent: faq/ask_jumlah_fakultas
     examples: |
-      - apa kepanjangan unsri ?
-      - unsri itu singkatan dari ?
+      - berapa banyak fakultas di unsri ?
+      - ada berapa jumlah fakultas di unsri ?
+      - jumlah fakultas unsri
+      - sebutkan jumlah fakultas di universitas sriwijaya ?
+      - jumlah fakultas
+
+  - intent: faq/ask_fakultas
+    examples: |
+      - sebutkan fakultas yang ada di unsri ?
+      - fakultas di unsri
+      - fakultas
+
+  - intent: faq/ask_jumlah_jurusan_fakultas_ekonomi
+    examples: |
+      - jumlah jurusan di fakultas ekonomi
+      - berapa banyak jurusan di fakultas ekonomi ?
+      - ada berapa jumlah jurusan di fakultas ekonomi ?
+      - jumlah jurusan di FE unsri
+
+  - intent: faq/ask_jurusan_fakultas_ekonomi
+    examples: |
+      - sebutkan jurusan yang ada di fakultas ekonomi ?
+      - jurusan di fakultas ekonomi
+      - jurusan ekonomi
+      - jurusan di FE
+
+  - intent: faq/ask_jumlah_jurusan_fakultas_hukum
+    examples: |
+      - jumlah jurusan di fakultas hukum
+      - berapa banyak jurusan di fakultas hukum
+      - ada berapa jumlah jurusan di fakultas hukum
+      - jumlah jurusan di FH unsri
+
+  - intent: faq/ask_jurusan_fakultas_hukum
+    examples: |
+      - sebutkan jurusan yang ada di fakultas hukum ?
+      - jurusan di fakultas hukum
+      - jurusan hukum
+      - jurusan di FH
+
+  - intent: faq/ask_jumlah_jurusan_fakultas_teknik
+    examples: |
+        - jumlah jurusan di fakultas teknik
+        - berapa banyak jurusan di fakultas teknik
+        - ada berapa jumlah jurusan di fakultas teknik
+        - jumlah jurusan di FT unsri
+
+  - intent: faq/ask_jurusan_fakultas_teknik
+    examples: |
+      - sebutkan jurusan yang ada di fakultas teknik ?
+      - jurusan di fakultas teknik
+      - jurusan teknik
+      - jurusan di FT
+
+  - intent: out_of_intent
+    examples: |
+      - sejarah universitas sriwijaya
+      - makna lambang universitas sriwijaya
