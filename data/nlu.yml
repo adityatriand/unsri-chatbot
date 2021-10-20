@@ -84,6 +84,13 @@ nlu:
       - jurusan teknik
       - jurusan di FT
 
+  - intent: faq/ask_ujian_saringan_masuk_diploma
+    examples: |
+      - Bagaimana ketentuan ujian saringan masuk untuk program Diploma ?
+      - Ketentuan ujian saringan masuk untuk program Diploma
+
+
+
   - intent: out_of_intent
     examples: |
       - sejarah universitas sriwijaya

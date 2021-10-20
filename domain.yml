@@ -82,6 +82,11 @@ responses:
         11. Teknik Pertambangan : Magister
         12. Ilmu Teknik : Doktor
 
+  utter_faq/ask_ujian_saringan_masuk_diploma:
+    - text: |
+        1. Untuk program Diploma, penerimaan calon mahasiswa dilakukan setiap awal tahun akademik melalui jalur seleksi USM
+        2. Waktu dan tata cara pelaksanaan dapat dilihat di laman www.usm.unsri.ac.id
+
   utter_respon_failed:
     - text: Maaf permintaan anda belum dapat diproses
 
