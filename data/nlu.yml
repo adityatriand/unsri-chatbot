@@ -310,6 +310,94 @@ nlu:
       - siapa sekretaris lembaga pengembangan pembelajaran dan penjaminan mutu pendidikan di universitas sriwijaya
       - sekretaris lp3mp unsri
 
+- intent: faq/ask_jumlah_lembaga_utama_universitas
+    examples: |
+      - jumlah lembaga utama yang ada di universitas sriwijaya
+      - jumlah lembaga utama yang ada di unsri
+      - berapa banyak lembaga utama yang ada di universitas sriwijaya?
+      - ada berapa lembaga utama di universitas sriwijaya?
+
+  - intent: faq/ask_lembaga_utama_universitas
+      examples: |
+        - sebutkan lembaga utama yang ada di universitas sriwijaya
+        - lembaga utama yang ada di unsri
+        - lembaga unsri
+        - unit kerja unsri
+
+  - intent: faq/ask_jumlah_kepala_lembaga_utama_universitas
+      examples: |
+        - ada berapa kepala lembaga utama di universitas sriwijaya?
+        - berapa banyak jumlah kepala lembaga utama di unsri?
+        - jumlah kepala lembaga unsri
+
+  - intent: faq/ask_kepala_lembaga_utama_universitas
+      examples: |
+        - sebutkan kepala lembaga utama yang ada di universitas sriwijaya
+        - kepala lembaga utama unsri
+        - siapa kepala biro di universitas sriwijaya?
+        - siapa kepala biro di unsri?
+        - siapa kabiro unsri?
+        - kabiro unsri
+        - siapa kepala UPT di universitas sriwijaya?
+        - siapa kepala UPT di unsri?
+        - siapa kepala unit unsri?
+        - kaunit unsri
+        - siapa kepala CDC di universitas sriwijaya?
+        - siapa kepala CDC unsri?
+        - kepala CDC unsri
+
+  - intent: faq/ask_jumlah_pimpinan_fakultas
+      examples: |
+        - ada berapa pimpinan fakultas di universitas sriwijaya?
+        - berapa banyak jumlah pimpinan fakultas di unsri?
+        - jumlah pimpinan fakultas
+
+  - intent: faq/ask_pimpinan_fakultas
+      examples: |
+        - siapa pimpinan fakultas di universitas sriwijaya?
+        - siapa pimpinan fakultas unsri?
+        - pimpinan fakultas unsri
+        - pimpinan fakultas
+
+  - intent: faq/ask_jumlah_jalur_penerimaan_calon_mahasiswa
+      examples: |
+        - ada berapa jalur penerimaan calon mahasiswa di universitas sriwijaya?
+        - berapa banyak jalur penerimaan calon mahasiswa unsri?
+        - jumlah jalur penerimaan calon mahasiswa unsri
+
+  - intent: faq/ask_jalur_penerimaan_calon_mahasiswa
+    examples: |
+      - jalur penerimaan calon mahasiswa di universitas sriwijaya
+      - jalur penerimaan camaba unsri
+      - seleksi penerimaan calon mahasiswa
+      - seleksi masuk unsri
+
+  - intent: faq/ask_seleksi_nasional
+      examples: |
+        - bagaimana cara mengikuti seleksi nasional unsri?
+        - tata cara mengikuti seleksi nasional
+        - persyaratan seleksi nasional
+        - pelaksanaan seleksi nasional
+        - jalur undangan unsri
+        - SNMPTN Unsri
+
+  - intent: faq/ask_seleksi_bersama
+      examples: |
+        - bagaimana cara mengikuti seleksi bersama unsri?
+        - tata cara mengikuti seleksi bersama
+        - persyaratan seleksi bersama
+        - pelaksanaan seleksi bersama
+        - jalur tes unsri
+        - SBMPTN Unsri
+
+  - intent: faq/ask_jalur_mandiri
+      examples: |
+        - bagaimana cara mengikuti tes mandiri unsri?
+        - tata cara mengikuti tes mandiri unsri
+        - persyaratan tes mandiri
+        - pelaksanaan tes mandiri
+        - jalur mandiri unsri
+
   - intent: faq/ask_ujian_saringan_masuk_diploma
     examples: |
       - Bagaimana ketentuan ujian saringan masuk untuk program Diploma unsri?
