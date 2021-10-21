@@ -444,6 +444,60 @@ nlu:
       - Sistem Penyelenggaraan Pendidikan di Unversitas Sriwijaya
       - Apa saja sistem penyelenggaraan pendidikan yang ada di unsri ?
 
+  - intent: faq/ask_sistem_kredit_semester_SKS
+    examples: |
+      - apa itu SKS?
+      - SKS adalah
+      - sistem kredit semester adalah
+      - Apa itu sistem kredit semester?
+      - sebutkan pengertian SKS
+
+ - intent: faq/ask_satuan_kredit_semester_sks
+    examples: |
+      - apa itu satuan kredit semester?
+      - satuan kredit semester adalah
+      - Apa itu satuan kredit semester?
+      - sebutkan pengertian satuan kredit semester
+
+- intent: faq/ask_perhitungan_1_sks_per_minggu
+    examples: |
+      - berapa durasi waktu untuk 1 sks?
+      - 1 sks berapa menit?
+      - indikator apa yang menjadi dasar perhitungan sks?
+
+- intent: faq/ask_perhitungan_1_sks_pembelajaran_kuliah_responsi_tutorial
+    examples: |
+      - 1 sks pembelajaran kuliah
+      - 170 menit pembelajaran kuliah adalah
+      - 1 sks pembelajaran kuliah terdiri dari
+
+- intent: faq/ask_perhitungan_1_sks_pembelajaran_seminar_bentuk_lain
+    examples: |
+      - 1 sks pembelajaran seminar
+      - 1 sks praktikum
+      - 1 sks praktik lapangan
+      - 170 menit pembelajaran seminar adalah
+      - 1 sks pembelajaran seminar terdiri dari
+
+- intent: faq/ask_pembelajaran_elearning
+    examples: |
+      - bagaimana cara belajar dengan e-learning?
+      - seperti apa sistem belajar dengan elearning
+      - pembelajaran di elearning unsri
+
+- intent: faq/ask_satu_satuan_kredit
+    examples: |
+      - apa itu satu satuan kredit?
+      - 1 satuan kredit unsri
+      - apa yang dimaksud satu satuan kredit?
+
+- intent: faq/ask_perhitungan_satu_satuan_kredit
+    examples: |
+      - satu satuan kredit terdiri dari?
+      - 1 satuan kredit unsri
+      - apa saja yang ada pada satu satuan kredit?
+
+
   - intent: out_of_intent
     examples: |
       - sejarah universitas sriwijaya
