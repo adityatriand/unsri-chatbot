@@ -463,6 +463,10 @@ utter_faq/ask_jumlah_lembaga_utama_universitas:
         2. Satuan Kredit Semester (sks)
         3. Satu Satuan Kredit Semester (1 sks)
 
+  utter_faq/ask_sistem_kredit_semester_SKS:
+    - text: Suatu sistem penyelenggaraan pendidikan dengan menggunakan satuan kredit semester (sks)
+
+
   utter_respon_failed:
     - text: Maaf permintaan anda belum dapat diproses
 

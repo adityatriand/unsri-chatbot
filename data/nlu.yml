@@ -444,6 +444,15 @@ nlu:
       - Sistem Penyelenggaraan Pendidikan di Unversitas Sriwijaya
       - Apa saja sistem penyelenggaraan pendidikan yang ada di unsri ?
 
+  - intent: faq/ask_sistem_kredit_semester_SKS
+    examples: |
+      - apa itu SKS?
+      - SKS adalah
+      - sistem kredit semester adalah
+      - Apa itu sistem kredit semester?
+      - sebutkan pengertian SKS
+
+
   - intent: out_of_intent
     examples: |
       - sejarah universitas sriwijaya
