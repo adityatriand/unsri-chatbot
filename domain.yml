@@ -320,6 +320,87 @@ responses:
   utter_faq/ask_sekretaris_lp3mp:
     - text: Sekretaris lembaga pengembangan pembelajaran dan penjaminan mutu pendidikan (LP3MP) adalah Dr. Ardian Septawan, M.Si
 
+utter_faq/ask_jumlah_lembaga_utama_universitas:
+    - text: Jumlah lembaga utama di Universitas Sriwijaya ada 12 lembaga
+
+  utter_faq/ask_lembaga_utama_universitas:
+    - text: |
+      1.  Biro Akademik dan Kemahasiswaan (BAK)
+      2.  Biro Umum dan Keuangan (BUK)
+      3.  Biro Perencanaan dan Hubungan Masyarakat (BPHM)
+      4.  Unit Pelaksana Teknis (UPT) Perpustakaan
+      5.  UPT Teknologi Informasi dan Komunikasi (TIK)
+      6.  UPT Penerbit dan Percetakan
+      7.  UPT Lembaga Bahasa
+      8.  UPT Mata Kuliah Pengembangan Kepribadian (MPK)
+      9.  UPT Klinik Kesehatan
+      10. UPT Laboratorium Dasar Bersama
+      11. UPT Kerjasama Layanan Internasional
+      12. Pusat Pengembangan Karakter dan Karir (CDC)
+
+  utter_faq/ask_jumlah_kepala_lembaga_utama_universitas:
+    - text: Jumlah kepala lembaga utama di Universitas Sriwijaya ada 12 orang
+
+  utter_faq/ask_kepala_lembaga_utama_universitas:
+    - text: |
+        1.  Kepala BAK: Drs. Djunaidi Sjarnoebi, MSLS
+        2.  Kepala BUK: Anita Rachmawati, SE.
+        3.  Kepala BPHM: Deddy Supriadi, ST., MSi
+        4.  Kepala UPT Perpustakaan: Dip-Ing. Ir. Amrifan S Mohruni, Ph.D.
+        5.  Kepala UPT TIK: Dr. H. Muhammad Irfan Djambak, ST., M. Eng
+        6.  Kepala UPT Penerbit dan Percetakan: Prof. Dr. Alfitri, M.Si.
+        7.  Kepala UPT Lembaga Bahasa: Dr. Bambang Loenetto, M.A.
+        8.  Kepala UPT MPK: H. Fahmi Yoesmar, SH, M.Hum
+        9.  Kepala UPT Klinik Kesehatan: Dr. Subandrate, M.Biomed
+        10. Kepala UPT Laboratorium Dasar Bersama: Prof. Dr. Muharni, M.Si.
+        11. Kepala UPT Kerjasama Layanan Internasional: Dr. Reza Firsandaya Malik, MT (obsolete)
+        12. Kepala Pusat CDC: Deris Setiawan, Ph.D.
+
+  utter_faq/ask_jumlah_pimpinan_fakultas:
+    - text: Jumlah pimpinan fakultas di Universitas Sriwijaya ada 11 orang
+
+  utter_faq/ask_pimpinan_fakultas:
+    - text: |
+        1.  Fakultas Ekonomi: Prof. Dr. Muhamad Adam
+        2.  Fakultas Hukum : Dr. Febrian, SH., MH.
+        3.  Fakultas Teknik : Prof. Dr. Ir. Subriyer Nasir, MSc.
+        4.  Fakultas Kedokteran:  dr. Syarif Husin, MS
+        5.  Fakultas Pertanian: Prof. Dr. Ir. Andi Mulyana, M.Sc.
+        6.  Fakultas Keguruan dan Ilmu Pendidikan: Prof. Sofendi, M.A., Ph.D.
+        7.  Fakultas Matematika dan Ilmu Pengetahuan Alam: Prof. Dr. Iskhaq Iskandar
+        8.  Fakultas Ilmu Sosial dan Politik: Prof. Dr. Kiagus. Muhammad Sobri, M.Si.
+        9.  Fakultas Ilmu Komputer: Jaidan Jauhari, M.T.
+        10. Fakultas Kesehatan Masyarakat: Dr. Misnaniarti, M. Kes.
+        11. Direktur Pascasarjana: Prof. Dr. Ir. Amin Rejo, MP.
+
+  utter_faq/ask_jumlah_jalur_penerimaan_calon_mahasiswa:
+    - text: Jumlah jalur penerimaan calon mahasiswa di Universitas Sriwijaya ada 5 jalur
+
+  utter_faq/ask_jalur_penerimaan_calon_mahasiswa:
+    - text: |
+        1.  Seleksi Nasional Masuk Perguruan Tinggi Negeri (SNMPTN)
+        2.  Seleksi Bersama Masuk Perguruan Tinggi Negeri (SBMPTN)
+        3.  Ujian Saringan Masuk Bersama (USMB)
+        4.  Ujian Saringan Masuk Program Diploma, Pascasarjana, Spesialis, dan Profesi
+        5.  Beasiswa KIP Kuliah (dulu program Pendidikan Miskin Indonesia-Bidikmisi)
+
+  utter_faq/ask_seleksi_nasional:
+     - text: |
+        1.  Dilaksanakan secara online
+        2.  Informasi tata cara mengikuti SNMPTN bisa dilihat di www.snmptn.or.id
+
+  utter_faq/ask_seleksi_bersama:
+    - text: |
+        1.  Diperuntukkan bagi calon mahasiswa yang berminat mengikuti program studi Program Sarjana (S1) di Universitas Sriwijaya
+        2.  Pendaftaran dilakukan secara online
+        3.  Persyaratan dan tata cara pendaftaran bisa dilihat di http://pendaftaran.sbmptn.or.id
+
+  utter_faq/ask_jalur_mandiri:
+    - text: |
+        1.  Dilaksanakan oleh kepanitiaan yang dibentuk dengan Surat Keputusan Rektor Universitas Sriwijaya
+        2.  Persyaratan peserta, proses pendaftaran, dan semua informasi terkait USMB diumumkan di www.usm.unsri.ac.id
+        3.  Dilakukan secara serentak di Kampus Universitas Sriwijaya Bukit Besar dan lokasi lain tergantung kebutuhan dan jumlah peserta
+
   utter_faq/ask_ujian_saringan_masuk_diploma:
     - text: |
         1. Untuk program Diploma, penerimaan calon mahasiswa dilakukan setiap awal tahun akademik melalui jalur seleksi USM
