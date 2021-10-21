@@ -466,6 +466,43 @@ utter_faq/ask_jumlah_lembaga_utama_universitas:
   utter_faq/ask_sistem_kredit_semester_SKS:
     - text: Suatu sistem penyelenggaraan pendidikan dengan menggunakan satuan kredit semester (sks)
 
+ utter_faq/ask_satuan_kredit_semester_sks:
+    - text: Takaran waktu kegiatan belajar yang dibebankan pada mahasiswa per minggu per semester dalam proses pembelajaran melalui berbagai bentuk pembelajaran atau besarnya pengakuan atas keberhasilan usaha mahasiswa dalam mengikuti kegiatan kurikuler di suatu program studi
+
+ utter_faq/ask_perhitungan_1_sks_per_minggu:
+    - text: |
+       1. Pembelajaran kuliah, responsi dan tutorial, adalah 170 menit.
+       2. Pembelajaran seminar atau bentuk lain, adalah 170 menit.
+       3. Pembelajaran praktikum, praktik studio, praktik bengkel dan/atau bentuk lain yang setara, adalah 170 (seratus tujuh puluh) menit.
+       4. Perhitungan satu satuan kredit semester (1 sks) untuk praktek lapangan, penelitian, pengabdian kepada masyarakat atau proses pembelajaran lain sejenis adalah 170 (seratus tujuh puluh) menit per minggu per semester.
+
+utter_faq/ask_perhitungan_1_sks_pembelajaran_kuliah_responsi_tutorial:
+    - text: |
+       1. Kegiatan belajar selama 50 (lima puluh) menit.
+       2. Penugasan terstruktur selama 60 (enam puluh) menit.
+       3. Belajar mandiri selama 60 (enam puluh) menit.
+
+utter_faq/ask_perhitungan_1_sks_pembelajaran_seminar_bentuk_lain:
+    - text: |
+       1. Kegiatan belajar selama 100 (seratus) menit;
+       2. Belajar mandiri selama 70 (tujuh puluh) menit.
+
+utter_faq/ask_pembelajaran_elearning:
+    - text: |
+       1. Waktu kegiatan belajar mahasiswa adalah 170 menit/sks/minggu.
+       2. Diwujudkan dalam bentuk pertemuan tatap maya sinkron dan pembelajaran asinkron.
+       3. Pembelajaran asinkron dapat disusun dalam bentuk pembelajaran mandiri dan atau pembelajaran berkelompok.
+       4. Dosen pengampu menetapkan alokasi waktu belajar untuk setiap bentuk kegiatan belajar yang diperlukan sesuai strategi pembelajaran.
+
+utter_faq/ask_satu_satuan_kredit:
+    - text: Satu satuan kredit semester mengacu kepada Peraturan Menteri Pendidikan dan Kebudayaan Nomor 3 Tahun 2020 tentang Standar Nasional Pendidikan Tinggi dan Peraturan Rektor Universitas Sriwijaya Nomor 5 Tahun 2020 tentang Standar Pendidikan Universitas Sriwijaya.
+
+utter_faq/ask_perhitungan_satu_satuan_kredit:
+    - text: |
+        1. 50 menit kegiatan belajar terjadwal dengan dosen pengampu.
+        2. 60 menit kegiatan akademik terstruktur.
+        3. 60 menit kegiatan akademik mandiri.
+
 
   utter_respon_failed:
     - text: Maaf permintaan anda belum dapat diproses
