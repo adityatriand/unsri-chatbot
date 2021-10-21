@@ -461,8 +461,8 @@ nlu:
 
 - intent: faq/ask_perhitungan_1_sks_per_minggu
     examples: |
-      - berapa durasi waktu untuk 1 sks?
-      - 1 sks berapa menit?
+      - berapa durasi waktu untuk 1 sks per minggu?
+      - bagaimana perhitungan untuk satu sks dalam satu minggu?
       - indikator apa yang menjadi dasar perhitungan sks?
 
 - intent: faq/ask_perhitungan_1_sks_pembelajaran_kuliah_responsi_tutorial
@@ -470,6 +470,7 @@ nlu:
       - 1 sks pembelajaran kuliah
       - 170 menit pembelajaran kuliah adalah
       - 1 sks pembelajaran kuliah terdiri dari
+      - tutorial satu sks pembelajaran kuliah responsi
 
 - intent: faq/ask_perhitungan_1_sks_pembelajaran_seminar_bentuk_lain
     examples: |
@@ -478,6 +479,7 @@ nlu:
       - 1 sks praktik lapangan
       - 170 menit pembelajaran seminar adalah
       - 1 sks pembelajaran seminar terdiri dari
+      - pembagian perhitungan satu sks pembelajaran dengan seminar atau bentuk lain
 
 - intent: faq/ask_pembelajaran_elearning
     examples: |
@@ -496,7 +498,6 @@ nlu:
       - satu satuan kredit terdiri dari?
       - 1 satuan kredit unsri
       - apa saja yang ada pada satu satuan kredit?
-
 
   - intent: out_of_intent
     examples: |
