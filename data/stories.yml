@@ -1,4 +1,22 @@
 version: "2.0"
 
 stories:
+ - story: happy path
+   steps:
+     - intent: chitchat/greet
+     - action: utter_chitchat/greet
+     - intent: chitchat/ask_name
+     - action: utter_chitchat/ask_name
+     - intent: chitchat/ask_goals
+     - action: utter_chitchat/ask_goals
+     - intent: faq
+     - action: utter_faq
+     - intent: chitchat/happy_end_ask
+     - action: utter_chitchat/happy_end_ask
 
+ - story: bad path
+   steps:
+     - intent: faq
+     - action: utter_faq
+     - intent: chitchat/bad_end_ask
+     - action: utter_chitchat/bad_end_ask

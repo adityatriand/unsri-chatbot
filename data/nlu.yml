@@ -22,6 +22,22 @@ nlu:
       - Kegunaanmu untuk apa ?
       - Manfaat kamu
 
+  - intent: chitchat/happy_end_ask
+    examples: |
+      - Oke
+      - Terima kasih
+      - Kamu hebat
+      - Keren
+      - Bagus banget
+
+  - intent: chitchat/bad_end_ask
+    examples: |
+      - Jawaban kurang tepat
+      - Gak keren
+      - Tidak keren
+      - Jelek
+      - Kurang bagus
+
   - intent: faq/ask_visi
     examples: |
       - sebutkan visi unsri ?

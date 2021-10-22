@@ -17,6 +17,12 @@ responses:
     - text: Saya akan membantu menjawab kebingungan Anda seputar Universitas Sriwijaya
     - text: Saya dibuat untuk menjawab pertanyaan seputar Universitas Sriwijaya
 
+  utter_chitchat/happy_end_ask:
+    - text: Senang bisa membantu kebingunganmu :D
+
+  utter_chitchat/bad_end_ask:
+    - text: Maaf kami akan segera memperbaiki kesalahan yang terjadi di masa yang akan datang
+
   utter_faq/ask_visi:
     - text: Visi Universitas Sriwijaya adalah menjadi perguruan tinggi terkemuka dan berbasis riset yang unggul dalam bidang ilmu pengetahuan dan teknologi
 
