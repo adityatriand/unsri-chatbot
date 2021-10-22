@@ -37,7 +37,7 @@ responses:
         5. Menyelenggarakan kerjasama dengan lembaga lain, baik nasional maupun internasional, dan
         6. Mewujudkan sistem manajemen perguruan tinggi yang profesional, efektif, efisien, dan akuntabel.
 
- utter_faq/ask_tujuan:
+  utter_faq/ask_tujuan:
    - text: |
       Tujuan Universitas Sriwijaya adalah
 
@@ -326,23 +326,23 @@ responses:
   utter_faq/ask_sekretaris_lp3mp:
     - text: Sekretaris lembaga pengembangan pembelajaran dan penjaminan mutu pendidikan (LP3MP) adalah Dr. Ardian Septawan, M.Si
 
-utter_faq/ask_jumlah_lembaga_utama_universitas:
+  utter_faq/ask_jumlah_lembaga_utama_universitas:
     - text: Jumlah lembaga utama di Universitas Sriwijaya ada 12 lembaga
 
   utter_faq/ask_lembaga_utama_universitas:
     - text: |
-      1.  Biro Akademik dan Kemahasiswaan (BAK)
-      2.  Biro Umum dan Keuangan (BUK)
-      3.  Biro Perencanaan dan Hubungan Masyarakat (BPHM)
-      4.  Unit Pelaksana Teknis (UPT) Perpustakaan
-      5.  UPT Teknologi Informasi dan Komunikasi (TIK)
-      6.  UPT Penerbit dan Percetakan
-      7.  UPT Lembaga Bahasa
-      8.  UPT Mata Kuliah Pengembangan Kepribadian (MPK)
-      9.  UPT Klinik Kesehatan
-      10. UPT Laboratorium Dasar Bersama
-      11. UPT Kerjasama Layanan Internasional
-      12. Pusat Pengembangan Karakter dan Karir (CDC)
+        1.  Biro Akademik dan Kemahasiswaan (BAK)
+        2.  Biro Umum dan Keuangan (BUK)
+        3.  Biro Perencanaan dan Hubungan Masyarakat (BPHM)
+        4.  Unit Pelaksana Teknis (UPT) Perpustakaan
+        5.  UPT Teknologi Informasi dan Komunikasi (TIK)
+        6.  UPT Penerbit dan Percetakan
+        7.  UPT Lembaga Bahasa
+        8.  UPT Mata Kuliah Pengembangan Kepribadian (MPK)
+        9.  UPT Klinik Kesehatan
+        10. UPT Laboratorium Dasar Bersama
+        11. UPT Kerjasama Layanan Internasional
+        12. Pusat Pengembangan Karakter dan Karir (CDC)
 
   utter_faq/ask_jumlah_kepala_lembaga_utama_universitas:
     - text: Jumlah kepala lembaga utama di Universitas Sriwijaya ada 12 orang

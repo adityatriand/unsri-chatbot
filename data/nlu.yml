@@ -326,7 +326,7 @@ nlu:
       - siapa sekretaris lembaga pengembangan pembelajaran dan penjaminan mutu pendidikan di universitas sriwijaya
       - sekretaris lp3mp unsri
 
-- intent: faq/ask_jumlah_lembaga_utama_universitas
+  - intent: faq/ask_jumlah_lembaga_utama_universitas
     examples: |
       - jumlah lembaga utama yang ada di universitas sriwijaya
       - jumlah lembaga utama yang ada di unsri
@@ -334,52 +334,52 @@ nlu:
       - ada berapa lembaga utama di universitas sriwijaya?
 
   - intent: faq/ask_lembaga_utama_universitas
-      examples: |
-        - sebutkan lembaga utama yang ada di universitas sriwijaya
-        - lembaga utama yang ada di unsri
-        - lembaga unsri
-        - unit kerja unsri
+    examples: |
+      - sebutkan lembaga utama yang ada di universitas sriwijaya
+      - lembaga utama yang ada di unsri
+      - lembaga unsri
+      - unit kerja unsri
 
   - intent: faq/ask_jumlah_kepala_lembaga_utama_universitas
-      examples: |
-        - ada berapa kepala lembaga utama di universitas sriwijaya?
-        - berapa banyak jumlah kepala lembaga utama di unsri?
-        - jumlah kepala lembaga unsri
+    examples: |
+      - ada berapa kepala lembaga utama di universitas sriwijaya?
+      - berapa banyak jumlah kepala lembaga utama di unsri?
+      - jumlah kepala lembaga unsri
 
   - intent: faq/ask_kepala_lembaga_utama_universitas
-      examples: |
-        - sebutkan kepala lembaga utama yang ada di universitas sriwijaya
-        - kepala lembaga utama unsri
-        - siapa kepala biro di universitas sriwijaya?
-        - siapa kepala biro di unsri?
-        - siapa kabiro unsri?
-        - kabiro unsri
-        - siapa kepala UPT di universitas sriwijaya?
-        - siapa kepala UPT di unsri?
-        - siapa kepala unit unsri?
-        - kaunit unsri
-        - siapa kepala CDC di universitas sriwijaya?
-        - siapa kepala CDC unsri?
-        - kepala CDC unsri
+    examples: |
+      - sebutkan kepala lembaga utama yang ada di universitas sriwijaya
+      - kepala lembaga utama unsri
+      - siapa kepala biro di universitas sriwijaya?
+      - siapa kepala biro di unsri?
+      - siapa kabiro unsri?
+      - kabiro unsri
+      - siapa kepala UPT di universitas sriwijaya?
+      - siapa kepala UPT di unsri?
+      - siapa kepala unit unsri?
+      - kaunit unsri
+      - siapa kepala CDC di universitas sriwijaya?
+      - siapa kepala CDC unsri?
+      - kepala CDC unsri
 
   - intent: faq/ask_jumlah_pimpinan_fakultas
-      examples: |
-        - ada berapa pimpinan fakultas di universitas sriwijaya?
-        - berapa banyak jumlah pimpinan fakultas di unsri?
-        - jumlah pimpinan fakultas
+    examples: |
+      - ada berapa pimpinan fakultas di universitas sriwijaya?
+      - berapa banyak jumlah pimpinan fakultas di unsri?
+      - jumlah pimpinan fakultas
 
   - intent: faq/ask_pimpinan_fakultas
-      examples: |
-        - siapa pimpinan fakultas di universitas sriwijaya?
-        - siapa pimpinan fakultas unsri?
-        - pimpinan fakultas unsri
-        - pimpinan fakultas
+    examples: |
+      - siapa pimpinan fakultas di universitas sriwijaya?
+      - siapa pimpinan fakultas unsri?
+      - pimpinan fakultas unsri
+      - pimpinan fakultas
 
   - intent: faq/ask_jumlah_jalur_penerimaan_calon_mahasiswa
-      examples: |
-        - ada berapa jalur penerimaan calon mahasiswa di universitas sriwijaya?
-        - berapa banyak jalur penerimaan calon mahasiswa unsri?
-        - jumlah jalur penerimaan calon mahasiswa unsri
+    examples: |
+      - ada berapa jalur penerimaan calon mahasiswa di universitas sriwijaya?
+      - berapa banyak jalur penerimaan calon mahasiswa unsri?
+      - jumlah jalur penerimaan calon mahasiswa unsri
 
   - intent: faq/ask_jalur_penerimaan_calon_mahasiswa
     examples: |
@@ -389,30 +389,30 @@ nlu:
       - seleksi masuk unsri
 
   - intent: faq/ask_seleksi_nasional
-      examples: |
-        - bagaimana cara mengikuti seleksi nasional unsri?
-        - tata cara mengikuti seleksi nasional
-        - persyaratan seleksi nasional
-        - pelaksanaan seleksi nasional
-        - jalur undangan unsri
-        - SNMPTN Unsri
+    examples: |
+      - bagaimana cara mengikuti seleksi nasional unsri?
+      - tata cara mengikuti seleksi nasional
+      - persyaratan seleksi nasional
+      - pelaksanaan seleksi nasional
+      - jalur undangan unsri
+      - SNMPTN Unsri
 
   - intent: faq/ask_seleksi_bersama
-      examples: |
-        - bagaimana cara mengikuti seleksi bersama unsri?
-        - tata cara mengikuti seleksi bersama
-        - persyaratan seleksi bersama
-        - pelaksanaan seleksi bersama
-        - jalur tes unsri
-        - SBMPTN Unsri
+    examples: |
+      - bagaimana cara mengikuti seleksi bersama unsri?
+      - tata cara mengikuti seleksi bersama
+      - persyaratan seleksi bersama
+      - pelaksanaan seleksi bersama
+      - jalur tes unsri
+      - SBMPTN Unsri
 
   - intent: faq/ask_jalur_mandiri
-      examples: |
-        - bagaimana cara mengikuti tes mandiri unsri?
-        - tata cara mengikuti tes mandiri unsri
-        - persyaratan tes mandiri
-        - pelaksanaan tes mandiri
-        - jalur mandiri unsri
+    examples: |
+      - bagaimana cara mengikuti tes mandiri unsri?
+      - tata cara mengikuti tes mandiri unsri
+      - persyaratan tes mandiri
+      - pelaksanaan tes mandiri
+      - jalur mandiri unsri
 
   - intent: faq/ask_ujian_saringan_masuk_diploma
     examples: |
@@ -468,27 +468,27 @@ nlu:
       - Apa itu sistem kredit semester?
       - sebutkan pengertian SKS
 
- - intent: faq/ask_satuan_kredit_semester_sks
+  - intent: faq/ask_satuan_kredit_semester_sks
     examples: |
       - apa itu satuan kredit semester?
       - satuan kredit semester adalah
       - Apa itu satuan kredit semester?
       - sebutkan pengertian satuan kredit semester
 
-- intent: faq/ask_perhitungan_1_sks_per_minggu
+  - intent: faq/ask_perhitungan_1_sks_per_minggu
     examples: |
       - berapa durasi waktu untuk 1 sks per minggu?
       - bagaimana perhitungan untuk satu sks dalam satu minggu?
       - indikator apa yang menjadi dasar perhitungan sks?
 
-- intent: faq/ask_perhitungan_1_sks_pembelajaran_kuliah_responsi_tutorial
+  - intent: faq/ask_perhitungan_1_sks_pembelajaran_kuliah_responsi_tutorial
     examples: |
       - 1 sks pembelajaran kuliah
       - 170 menit pembelajaran kuliah adalah
       - 1 sks pembelajaran kuliah terdiri dari
       - tutorial satu sks pembelajaran kuliah responsi
 
-- intent: faq/ask_perhitungan_1_sks_pembelajaran_seminar_bentuk_lain
+  - intent: faq/ask_perhitungan_1_sks_pembelajaran_seminar_bentuk_lain
     examples: |
       - 1 sks pembelajaran seminar
       - 1 sks praktikum
@@ -497,19 +497,19 @@ nlu:
       - 1 sks pembelajaran seminar terdiri dari
       - pembagian perhitungan satu sks pembelajaran dengan seminar atau bentuk lain
 
-- intent: faq/ask_pembelajaran_elearning
+  - intent: faq/ask_pembelajaran_elearning
     examples: |
       - bagaimana cara belajar dengan e-learning?
       - seperti apa sistem belajar dengan elearning
       - pembelajaran di elearning unsri
 
-- intent: faq/ask_satu_satuan_kredit
+  - intent: faq/ask_satu_satuan_kredit
     examples: |
       - apa itu satu satuan kredit?
       - 1 satuan kredit unsri
       - apa yang dimaksud satu satuan kredit?
 
-- intent: faq/ask_perhitungan_satu_satuan_kredit
+  - intent: faq/ask_perhitungan_satu_satuan_kredit
     examples: |
       - satu satuan kredit terdiri dari?
       - 1 satuan kredit unsri
