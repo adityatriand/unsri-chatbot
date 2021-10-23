@@ -1,16 +1,1 @@
 version: "2.0"
-
-stories:
- - story: order path
-   steps:
-     - intent: chitchat
-     - action: utter_chitchat
-     - intent: faq
-     - action: utter_faq
-
- - story: unorder path
-   steps:
-     - intent: faq
-     - action: utter_faq
-     - intent: chitchat
-     - action: utter_chitchat
