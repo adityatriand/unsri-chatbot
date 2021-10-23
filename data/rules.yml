@@ -16,3 +16,8 @@ rules:
     steps:
     - intent: out_of_intent
     - action: utter_respon_failed
+
+  - rule: handle minus param
+    steps:
+    - intent: minus_param
+    - action: utter_minus_param

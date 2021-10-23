@@ -448,3 +448,7 @@ nlu:
   examples: |
     - sejarah universitas sriwijaya
     - makna lambang universitas sriwijaya
+- intent: minus_param
+  examples: |
+    - jurusan fakultas
+    - wakil rektor

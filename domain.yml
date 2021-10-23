@@ -11,6 +11,8 @@ intents:
     use_entities: true
 - out_of_intent:
     use_entities: true
+- minus_param:
+    use_entities: true
 entities: []
 slots: {}
 responses:
@@ -293,6 +295,8 @@ responses:
   - text: Jumlah lembaga utama di Universitas Sriwijaya ada 12 lembaga
   utter_faq/ask_lembaga_utama_universitas:
   - text: |
+      Berikut lembaga - lembaga yang ada di Universitas Sriwijaya
+
       1.  Biro Akademik dan Kemahasiswaan (BAK)
       2.  Biro Umum dan Keuangan (BUK)
       3.  Biro Perencanaan dan Hubungan Masyarakat (BPHM)
@@ -309,6 +313,8 @@ responses:
   - text: Jumlah kepala lembaga utama di Universitas Sriwijaya ada 12 orang
   utter_faq/ask_kepala_lembaga_utama_universitas:
   - text: |
+      Berikut daftar nama kepala setiap lembaga yang ada di Universitas Sriwijaya
+
       1.  Kepala BAK: Drs. Djunaidi Sjarnoebi, MSLS
       2.  Kepala BUK: Anita Rachmawati, SE.
       3.  Kepala BPHM: Deddy Supriadi, ST., MSi
@@ -325,6 +331,8 @@ responses:
   - text: Jumlah pimpinan fakultas di Universitas Sriwijaya ada 11 orang
   utter_faq/ask_pimpinan_fakultas:
   - text: |
+      Berikut adalah nama setiap pimpinan fakultas yang ada di Universitas Sriwijaya
+
       1.  Fakultas Ekonomi: Prof. Dr. Muhamad Adam
       2.  Fakultas Hukum : Dr. Febrian, SH., MH.
       3.  Fakultas Teknik : Prof. Dr. Ir. Subriyer Nasir, MSc.
@@ -340,6 +348,8 @@ responses:
   - text: Jumlah jalur penerimaan calon mahasiswa di Universitas Sriwijaya ada 5 jalur
   utter_faq/ask_jalur_penerimaan_calon_mahasiswa:
   - text: |
+      Penerimaan calon mahasiswa Universitas Sriwajaya dapat dilakukan dengan cara berikut
+
       1.  Seleksi Nasional Masuk Perguruan Tinggi Negeri (SNMPTN)
       2.  Seleksi Bersama Masuk Perguruan Tinggi Negeri (SBMPTN)
       3.  Ujian Saringan Masuk Bersama (USMB)
@@ -347,29 +357,40 @@ responses:
       5.  Beasiswa KIP Kuliah (dulu program Pendidikan Miskin Indonesia-Bidikmisi)
   utter_faq/ask_seleksi_nasional:
   - text: |
+      Penjelasan mengenai SNMPTN bisa dilihat sebagai berikut
+
       1.  Dilaksanakan secara online
       2.  Informasi tata cara mengikuti SNMPTN bisa dilihat di www.snmptn.or.id
   utter_faq/ask_seleksi_bersama:
   - text: |
+      Penjelasan mengenai SBMPTN bisa dilihat sebagai berikut
+
       1.  Diperuntukkan bagi calon mahasiswa yang berminat mengikuti program studi Program Sarjana (S1) di Universitas Sriwijaya
       2.  Pendaftaran dilakukan secara online
       3.  Persyaratan dan tata cara pendaftaran bisa dilihat di http://pendaftaran.sbmptn.or.id
   utter_faq/ask_jalur_mandiri:
   - text: |
+      Penjelasan mengenai USMB bisa dilihat sebagai berikut
+
       1.  Dilaksanakan oleh kepanitiaan yang dibentuk dengan Surat Keputusan Rektor Universitas Sriwijaya
       2.  Persyaratan peserta, proses pendaftaran, dan semua informasi terkait USMB diumumkan di www.usm.unsri.ac.id
       3.  Dilakukan secara serentak di Kampus Universitas Sriwijaya Bukit Besar dan lokasi lain tergantung kebutuhan dan jumlah peserta
   utter_faq/ask_ujian_saringan_masuk_diploma:
   - text: |
+      Penjelasan mengenai USM Diploma sebagai berikut
+
       1. Untuk program Diploma, penerimaan calon mahasiswa dilakukan setiap awal tahun akademik melalui jalur seleksi USM
       2. Waktu dan tata cara pelaksanaan dapat dilihat di laman www.usm.unsri.ac.id
   utter_faq/ask_ujian_saringan_masuk_pascasarjana_spesialis_profesi:
   - text: |
+      Penjelasan mengenai USM pascasarjana, spesialis, dan profesi sebagai berikut
+
       1. Untuk program Pascasarjana, Spesialis, dan Profesi, penerimaan calon mahasiswa dilakukan pada semester ganjil dan genap melalui jalur seleksi USM
       2. Waktu dan tata cara pelaksanaan dapat dilihat di laman www.usm.unsri.ac.id
   utter_faq/ask_beasiswa:
   - text: |
       Calon mahasiswa beasiswa KIP Kuliah harus mengikuti mekanisme berikut:
+
       1. Mempelajari dan memahami prosedur pendaftaran program KIP Kuliah di https://kip-kuliah.kemdikbud.go.id
       2. Melakukan pendaftaran online mandiri lewat laman tersebut atau melalui aplikasi KIP Kuliah yang dapat diunduh di playstore
       3. Memasukkan NIK, NISN, NPSN, dan alamat email aktif pada saat pendaftaran
@@ -380,6 +401,8 @@ responses:
       8. Calon penerima KIP Kuliah yang dinyatakan diterima di Perguruan Tinggi dapat dilakukan verifikasi lebih lanjut oleh Universitas Sriwijaya sebelum diusulkan sebagai calon mahasiswa penerima KIP Kuliah
   utter_faq/ask_pendaftaran_ulang_maba:
   - text: |
+      Berikut prosedur pendaftaran ulang mahasiswa baru Universitas Sriwijaya
+
       1. Seluruh calon mahasiswa baru Universitas Sriwijaya, baik yang diterima melalui SNMPTN, SBMPTN, dan USM wajib melakukan registrasi secara daring dan menyerahkan berkas-berkas yang dipersyaratkan ke Biro Akademik dan Kemahasiswaan Universitas Sriwijaya pada tempat dan waktu yang ditetapkan
       2. Calon dinyatakan gugur apabila tidak mendaftar ulang pada waktu yang ditetapkan
       3. Calon mahasiswa yang telah melakukan registrasi ulang dan memenuhi semua persyaratan akan memperoleh Kartu Pengenal Mahasiswa (KPM), dan Jaket Almamater
@@ -388,6 +411,8 @@ responses:
       6. Mahasiswa baru diminta mengikuti kegiatan Pengenalan Kehidupan Kampus (PK2) untuk mendapatkan informasi mengenai pendidikan di Universitas Sriwijaya, pelaksanaan kegiatan akademik, nama pembimbing akademik, dan pengisian Kartu Studi Mahasiswa (KSM) semester pertama
   utter_faq/ask_prosedur_mahasiswa_asing_di_unsri:
   - text: |
+      Berikut prosedur calon mahasiswa asing di lingkungan Universitas Sriwijaya
+
       1. Calon mahasiswa asing yang ingin mendaftar ke Universitas Sriwijaya menghubungi Kantor Kerjasama Layanan Internasional (KLI) untuk mendapatkan informasi persyaratan bagi calon mahasiswa asing untuk mendaftar di Universitas Sriwijaya.
       2. Mahasiswa asing yang mengambil kursus singkat atau karyasiswa yang kurang dari satu tahun belajar di Universitas Sriwijaya, pengurusan kelengkapan administrasinya dilakukan di KLI setelah terlebih dahulu melakukan registrasi di urusan mahasiswa asing, Biro Akademik dan Kemahasiswaan Universitas Sriwijaya
       3. Mahasiswa asing yang telah diterima menjadi mahasiswa program sarjana, program magister, atau program doktor Universitas Sriwijaya, mengurus persyaratan akademik di Biro Akademik dan Kemahasiswaan Universitas Sriwijaya
@@ -399,6 +424,9 @@ responses:
       NIM ditetapkan berdasarkan pengkodean yang tertuang dalam Surat Keputusan Rektor Universitas Sriwijaya Nomor:122/UN9/DT.Kep/2013 tanggal 27 Mei 2013
   utter_faq/ask_kode_nim:
   - text: |
+      Tata cara pengkodean NIM
+      contoh : 09021181924019
+
       1. Fakultas/Program (2 digit)
       2. Program Studi (2 digit)
       3. Program Pendidikan (1 digit)
@@ -407,7 +435,8 @@ responses:
       6. Tahun Masuk (2 digit)
       7. Tahun Batas Akhir Masa Studi (2 digit)
       8. Nomor Urut Pendaftaran (3 digit)
-      9. NIM memiliki total 14 digit angka
+
+      NIM memiliki total 14 digit angka
   utter_faq/ask_sistem_penyelenggaraan_pendidikan:
   - text: |
       Sistem penyelenggaraan pendidikan di unsri terdiri dari
@@ -420,21 +449,29 @@ responses:
   - text: Takaran waktu kegiatan belajar yang dibebankan pada mahasiswa per minggu per semester dalam proses pembelajaran melalui berbagai bentuk pembelajaran atau besarnya pengakuan atas keberhasilan usaha mahasiswa dalam mengikuti kegiatan kurikuler di suatu program studi
   utter_faq/ask_perhitungan_1_sks_per_minggu:
   - text: |
+      Perhitungan 1 SKS per Minggu
+
       1. Pembelajaran kuliah, responsi dan tutorial, adalah 170 menit.
       2. Pembelajaran seminar atau bentuk lain, adalah 170 menit.
       3. Pembelajaran praktikum, praktik studio, praktik bengkel dan/atau bentuk lain yang setara, adalah 170 (seratus tujuh puluh) menit.
       4. Perhitungan satu satuan kredit semester (1 sks) untuk praktek lapangan, penelitian, pengabdian kepada masyarakat atau proses pembelajaran lain sejenis adalah 170 (seratus tujuh puluh) menit per minggu per semester.
   utter_faq/ask_perhitungan_1_sks_pembelajaran_kuliah_responsi_tutorial:
   - text: |
+      Perhitungan 1 SKS pembelajaran kuliah responsi
+
       1. Kegiatan belajar selama 50 (lima puluh) menit.
       2. Penugasan terstruktur selama 60 (enam puluh) menit.
       3. Belajar mandiri selama 60 (enam puluh) menit.
   utter_faq/ask_perhitungan_1_sks_pembelajaran_seminar_bentuk_lain:
   - text: |
+      Perhitungan 1 SKS pembelajaran dalam bentuk seminar atau bentuk lain
+
       1. Kegiatan belajar selama 100 (seratus) menit;
       2. Belajar mandiri selama 70 (tujuh puluh) menit.
   utter_faq/ask_pembelajaran_elearning:
   - text: |
+      Pembelajaran Elearning
+
       1. Waktu kegiatan belajar mahasiswa adalah 170 menit/sks/minggu.
       2. Diwujudkan dalam bentuk pertemuan tatap maya sinkron dan pembelajaran asinkron.
       3. Pembelajaran asinkron dapat disusun dalam bentuk pembelajaran mandiri dan atau pembelajaran berkelompok.
@@ -443,11 +480,16 @@ responses:
   - text: Satu satuan kredit semester mengacu kepada Peraturan Menteri Pendidikan dan Kebudayaan Nomor 3 Tahun 2020 tentang Standar Nasional Pendidikan Tinggi dan Peraturan Rektor Universitas Sriwijaya Nomor 5 Tahun 2020 tentang Standar Pendidikan Universitas Sriwijaya.
   utter_faq/ask_perhitungan_satu_satuan_kredit:
   - text: |
+      Perhitungan 1 satuan kredit
+
       1. 50 menit kegiatan belajar terjadwal dengan dosen pengampu.
       2. 60 menit kegiatan akademik terstruktur.
       3. 60 menit kegiatan akademik mandiri.
   utter_respon_failed:
   - text: Maaf permintaan anda belum dapat diproses
+  utter_minus_param:
+  - text: Maaf permintaan anda kurang lengkap
+
 actions: []
 forms: {}
 e2e_actions: []
