@@ -12,6 +12,7 @@ nlu:
     - Siapa nama kamu ?
     - Apakah kamu sebuah bot ?
     - Orang - orang memanggilmu apa ?
+    - Siapa ini?
 - intent: chitchat/ask_goals
   examples: |
     - Untuk apa kamu dibuat ?
@@ -363,10 +364,12 @@ nlu:
   examples: |
     - Bagaimana ketentuan ujian saringan masuk untuk program Diploma unsri?
     - Ketentuan ujian saringan masuk untuk program Diploma Universitas Sriwijaya
+    - Cara masuk unsri jalur usm diploma
 - intent: faq/ask_ujian_saringan_masuk_pascasarjana_spesialis_profesi
   examples: |
     - Bagaimana ketentuan ujian saringan masuk untuk Program Pascasarjana, Spesialis dan Profesi Unsri?
     - Ketentuan Ujian saringan masuk untuk Program Pascasarjana, Spesialis dan Profesi Universitas Sriwijaya
+    - Cara masuk jalur profesi?
 - intent: faq/ask_beasiswa
   examples: |
     - Ketentuan Beasiswa KIP Kuliah Universitas Sriwijaya
@@ -392,6 +395,10 @@ nlu:
     - Bagaimana sistem pengkodean untuk NIM di Unsri?
     - Sistem pengkodean NIM di Universitas Sriwijaya
     - Cara pengkodean NIM di Unsri
+    - Aturan NIM?
+    - Aturan NIM
+    - Ketentuan NIM
+    - Ketentuan nim
 - intent: faq/ask_sistem_penyelenggaraan_pendidikan
   examples: |
     - Bagaimana Sistem Penyelenggaraan Pendidikan di Unsri?
@@ -452,3 +459,4 @@ nlu:
   examples: |
     - jurusan fakultas
     - wakil rektor
+    - ujian saringan masuk

@@ -489,7 +489,6 @@ responses:
   - text: Maaf permintaan anda belum dapat diproses
   utter_minus_param:
   - text: Maaf permintaan anda kurang lengkap
-
 actions: []
 forms: {}
 e2e_actions: []
