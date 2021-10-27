@@ -299,21 +299,22 @@ nlu:
     - ada berapa kepala lembaga utama di universitas sriwijaya?
     - berapa banyak jumlah kepala lembaga utama di unsri?
     - jumlah kepala lembaga unsri
-- intent: faq/ask_kepala_lembaga_utama_universitas
+- intent: faq/ask_pimpiman_kepala_biro
   examples: |
-    - sebutkan kepala lembaga utama yang ada di universitas sriwijaya
-    - kepala lembaga utama unsri
-    - siapa kepala biro di universitas sriwijaya?
-    - siapa kepala biro di unsri?
-    - siapa kabiro unsri?
-    - kabiro unsri
-    - siapa kepala UPT di universitas sriwijaya?
-    - siapa kepala UPT di unsri?
-    - siapa kepala unit unsri?
-    - kaunit unsri
-    - siapa kepala CDC di universitas sriwijaya?
-    - siapa kepala CDC unsri?
-    - kepala CDC unsri
+    - Siapa pimpinan kepala biro di universitas sriwijaya?
+    - Pimpinan kepala biro universitas sriwijaya
+    - jumlah kepala biro unsri
+    - berapa jumlah kepala biro di unsri?
+- intent: faq/ask_kepala_upt
+  examples: |
+    - siapa pimpinan kepala UPT unsri?
+    - pimpinan kepala upt universitas sriwijaya
+    - berapa jumlah kepala UPT unsri?
+- intent: faq/ask_kepala_pusat
+  examples: |
+    - siapa pimpinan kepala pusat unversitas sriwijaya?
+    - pimpinan kepala pusat unsri
+    - berapa jumlah pimpinan kepala pusat unsri?
 - intent: faq/ask_jumlah_pimpinan_fakultas
   examples: |
     - ada berapa pimpinan fakultas di universitas sriwijaya?
@@ -365,11 +366,21 @@ nlu:
     - Bagaimana ketentuan ujian saringan masuk untuk program Diploma unsri?
     - Ketentuan ujian saringan masuk untuk program Diploma Universitas Sriwijaya
     - Cara masuk unsri jalur usm diploma
-- intent: faq/ask_ujian_saringan_masuk_pascasarjana_spesialis_profesi
+- intent: faq/ask_ujian_saringan_masuk_pascasarjana
   examples: |
-    - Bagaimana ketentuan ujian saringan masuk untuk Program Pascasarjana, Spesialis dan Profesi Unsri?
-    - Ketentuan Ujian saringan masuk untuk Program Pascasarjana, Spesialis dan Profesi Universitas Sriwijaya
-    - Cara masuk jalur profesi?
+    - Bagaimana ketentuan ujian saringan masuk untuk Program Pascasarjana Unsri?
+    - Ketentuan Ujian saringan masuk untuk Program Pascasarjana Universitas Sriwijaya
+    - Cara masuk program pascasarjana unsri?
+- intent: faq/ask_ujian_saringan_masuk_spesialis
+  examples: |
+    - Bagaimana ketentuan ujian saringan masuk untuk Program Spesialis Unsri?
+    - Ketentuan Ujian saringan masuk untuk Program Spesialis Universitas Sriwijaya
+    - Cara masuk program spesialis unsri?
+- intent: faq/ask_ujian_saringan_masuk_profesi
+  examples: |
+    - Bagaimana ketentuan ujian saringan masuk untuk Program Profesi Unsri?
+    - Ketentuan Ujian saringan masuk untuk Program Profesi Universitas Sriwijaya
+    - Cara masuk program profesi unsri?
 - intent: faq/ask_beasiswa
   examples: |
     - Ketentuan Beasiswa KIP Kuliah Universitas Sriwijaya
