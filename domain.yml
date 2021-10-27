@@ -317,18 +317,18 @@ responses:
       2. Kepala Biro Umum dan Keuangan: Anita Rachmawati, SE.
       3. Kepala Biro Perencanaan dan Hubungan Masyarakat: Deddy Supriadi, ST., MSi
   utter_faq/ask_kepala_upt:
-    - text: |
-        1. Kepala UPT Perpustakaan: Dip-Ing. Ir. Amrifan S Mohruni, Ph.D.
-        2. Kepala UPT TIK: Dr. H. Muhammad Irfan Djambak, ST., M. Eng
-        3. Kepala UPT Penerbit dan Percetakan: Prof. Dr. Alfitri, M.Si.
-        4. Kepala UPT Lembaga Bahasa: Dr. Bambang Loenetto, M.A.
-        5. Kepala UPT MPK: H. Fahmi Yoesmar, SH, M.Hum
-        6. Kepala UPT Klinik Kesehatan: Dr. Subandrate, M.Biomed
-        7. Kepala UPT Laboratorium Dasar Bersama: Prof. Dr. Muharni, M.Si.
-        8. Kepala UPT Kerjasama Layanan Internasional: Dr. Reza Firsandaya Malik, MT (obsolete)
+  - text: |
+      1. Kepala UPT Perpustakaan: Dip-Ing. Ir. Amrifan S Mohruni, Ph.D.
+      2. Kepala UPT TIK: Dr. H. Muhammad Irfan Djambak, ST., M. Eng
+      3. Kepala UPT Penerbit dan Percetakan: Prof. Dr. Alfitri, M.Si.
+      4. Kepala UPT Lembaga Bahasa: Dr. Bambang Loenetto, M.A.
+      5. Kepala UPT MPK: H. Fahmi Yoesmar, SH, M.Hum
+      6. Kepala UPT Klinik Kesehatan: Dr. Subandrate, M.Biomed
+      7. Kepala UPT Laboratorium Dasar Bersama: Prof. Dr. Muharni, M.Si.
+      8. Kepala UPT Kerjasama Layanan Internasional: Dr. Reza Firsandaya Malik, MT (obsolete)
   utter_faq/ask_kepala_pusat:
-    - text: |
-        1. Kepala Pusat CDC: Deris Setiawan, Ph.D.
+  - text: |
+      1. Kepala Pusat CDC: Deris Setiawan, Ph.D.
   utter_faq/ask_jumlah_pimpinan_fakultas:
   - text: Jumlah pimpinan fakultas di Universitas Sriwijaya ada 11 orang
   utter_faq/ask_pimpinan_fakultas:
