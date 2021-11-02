@@ -13,7 +13,10 @@ intents:
     use_entities: true
 - minus_param:
     use_entities: true
-entities: []
+actions:
+  - action_jumlah_jurusan_fakultas
+entities: 
+  - fakultas
 slots: {}
 responses:
   utter_chitchat/greet:
@@ -503,6 +506,5 @@ responses:
   - text: Maaf permintaan anda belum dapat diproses
   utter_minus_param:
   - text: Maaf permintaan anda kurang lengkap
-actions: []
 forms: {}
 e2e_actions: []

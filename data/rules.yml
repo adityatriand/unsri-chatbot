@@ -21,3 +21,10 @@ rules:
     steps:
     - intent: minus_param
     - action: utter_minus_param
+
+  - rule: jumlah jurusan fakultas
+    steps:
+    - intent: faq/ask_jumlah_jurusan_fakultas
+    - action: action_jumlah_jurusan_fakultas
+
+#jalankan dulu rasa run actions

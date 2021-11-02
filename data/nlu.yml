@@ -68,127 +68,38 @@ nlu:
     - fakultas di unsri
     - fakultas
     - Fakultas yang ada di unsri
-- intent: faq/ask_jumlah_jurusan_fakultas_ekonomi
+- intent: faq/ask_jumlah_jurusan_fakultas
   examples: |
-    - jumlah jurusan di fakultas ekonomi
-    - berapa banyak jurusan di fakultas ekonomi ?
-    - ada berapa jumlah jurusan di fakultas ekonomi ?
-    - jumlah jurusan di FE unsri
-- intent: faq/ask_jurusan_fakultas_ekonomi
+    - jumlah jurusan di [fakultas ekonomi](fakultas)
+    - berapa banyak jurusan di [fakultas ekonomi](fakultas) ?
+    - ada berapa jumlah jurusan di [fakultas ekonomi](fakultas) ?
+    - jumlah jurusan di [FE](fakultas) unsri
+- intent: faq/ask_jurusan_fakultas
   examples: |
-    - sebutkan jurusan yang ada di fakultas ekonomi ?
-    - jurusan di fakultas ekonomi
-    - jurusan ekonomi
-    - jurusan di FE
-- intent: faq/ask_jumlah_jurusan_fakultas_hukum
+    - sebutkan jurusan yang ada di [fakultas ekonomi](fakultas) ?
+    - jurusan di [fakultas ekonomi](fakultas)
+    - jurusan di [FE](fakultas)
+- lookup: fakultas
   examples: |
-    - jumlah jurusan di fakultas hukum
-    - berapa banyak jurusan di fakultas hukum
-    - ada berapa jumlah jurusan di fakultas hukum
-    - jumlah jurusan di FH unsri
-- intent: faq/ask_jurusan_fakultas_hukum
-  examples: |
-    - sebutkan jurusan yang ada di fakultas hukum ?
-    - jurusan di fakultas hukum
-    - jurusan hukum
-    - jurusan di FH
-- intent: faq/ask_jumlah_jurusan_fakultas_teknik
-  examples: |
-    - jumlah jurusan di fakultas teknik
-    - berapa banyak jurusan di fakultas teknik
-    - ada berapa jumlah jurusan di fakultas teknik
-    - jumlah jurusan di FT unsri
-- intent: faq/ask_jurusan_fakultas_teknik
-  examples: |
-    - sebutkan jurusan yang ada di fakultas teknik ?
-    - jurusan di fakultas teknik
-    - jurusan teknik
-    - jurusan di FT
-- intent: faq/ask_jumlah_jurusan_fakultas_kedokteran
-  examples: |
-    - jumlah jurusan di fakultas kedokteran
-    - berapa banyak jurusan di fakultas kedokteran
-    - ada berapa jumlah jurusan di fakultas kedokteran
-    - jumlah jurusan di FK unsri
-- intent: faq/ask_jurusan_fakultas_kedokteran
-  examples: |
-    - sebutkan jurusan yang ada di fakultas kedokteran ?
-    - jurusan di fakultas kedokteran
-    - jurusan kedokteran
-    - jurusan di FK
-- intent: faq/ask_jumlah_jurusan_fakultas_pertanian
-  examples: |
-    - jumlah jurusan di fakultas pertanian
-    - berapa banyak jurusan di fakultas pertanian
-    - ada berapa jumlah jurusan di fakultas pertanian
-    - jumlah jurusan di FP unsri
-- intent: faq/ask_jurusan_fakultas_pertanian
-  examples: |
-    - sebutkan jurusan yang ada di fakultas pertanian ?
-    - jurusan di fakultas pertanian
-    - jurusan pertanian
-    - jurusan di FP
-- intent: faq/ask_jumlah_jurusan_fakultas_keguruan
-  examples: |
-    - jumlah jurusan di fakultas keguruan dan ilmu pendidikan
-    - berapa banyak jurusan di fakultas keguruan
-    - ada berapa jumlah jurusan di fakultas ilmu pendidikan
-    - jumlah jurusan di FKIP unsri
-- intent: faq/ask_jurusan_fakultas_keguruan
-  examples: |
-    - sebutkan jurusan yang ada di fakultas keguruan dan ilmu pendidikan ?
-    - jurusan di fakultas keguruan dan ilmu pendidikan
-    - jurusan keguruan
-    - jurusan di FKIP
-- intent: faq/ask_jumlah_jurusan_fakultas_ilmu_sosial_dan_ilmu_politik
-  examples: |
-    - jumlah jurusan di fakultas ilmu sosial dan ilmu politik
-    - berapa banyak jurusan di fakultas ilmu sosial dan ilmu politik
-    - ada berapa jumlah jurusan di fakultas ilmu sosial dan ilmu politik
-    - jumlah jurusan di FISIP unsri
-- intent: faq/ask_jurusan_fakultas_ilmu_sosial_dan_ilmu_politik
-  examples: |
-    - sebutkan jurusan yang ada di fakultas ilmu sosial dan ilmu politik ?
-    - jurusan di fakultas ilmu sosial dan ilmu politik
-    - jurusan ilmu sosial dan ilmu politik
-    - jurusan di FISIP
-- intent: faq/ask_jumlah_jurusan_fakultas_matematika_dan_ilmu_pengetahuan_alam
-  examples: |
-    - jumlah jurusan di fakultas matematika dan ilmu pengetahuan alam
-    - berapa banyak jurusan di fakultas matematika dan ilmu pengetahuan alam
-    - ada berapa jumlah jurusan di fakultas matematika dan ilmu pengetahuan alam
-    - jumlah jurusan di FMIPA unsri
-- intent: faq/ask_jurusan_fakultas_matematika_dan_ilmu_pengetahuan_alam
-  examples: |
-    - sebutkan jurusan yang ada di fakultas matematika dan ilmu pengetahuan alam ?
-    - jurusan di fakultas matematika dan ilmu pengetahuan alam
-    - jurusan matematika dan ilmu pengetahuan alam
-    - jurusan di FMIPA
-- intent: faq/ask_jumlah_jurusan_fakultas_ilmu_komputer
-  examples: |
-    - jumlah jurusan di fakultas ilmu komputer
-    - berapa banyak jurusan di fakultas ilmu komputer ?
-    - ada berapa jumlah jurusan di fakultas ilmu komputer
-    - jumlah jurusan di FASILKOM unsri
+    - fakultas ekonomi
+    - fakultas hukum
+    - fakultas teknik
+    - fakultas kedokteran
+    - fakultas pertanian
+    - fakultas keguruan dan ilmu pendidikan
+    - fakultas ilmu sosial dan ilmu politik
+    - fakultas matematika dan ilmu pengetahuan alam
     - fakultas ilmu komputer
-- intent: faq/ask_jurusan_fakultas_ilmu_komputer
-  examples: |
-    - sebutkan jurusan yang ada di fakultas ilmu komputer ?
-    - jurusan di fakultas ilmu komputer
-    - jurusan ilmu komputer
-    - jurusan di FASILKOM
-- intent: faq/ask_jumlah_jurusan_fakultas_kesehatan_masyarakat
-  examples: |
-    - jumlah jurusan di fakultas kesehatan masyarakat
-    - berapa banyak jurusan di fakultas kesehatan masyarakat ?
-    - ada berapa jumlah jurusan di fakultas kesehatan masyarakat
-    - jumlah jurusan di FKM unsri
-- intent: faq/ask_jurusan_fakultas_kesehatan_masyarakat
-  examples: |
-    - sebutkan jurusan yang ada di fakultas kesehatan masyarakat ?
-    - jurusan di fakultas kesehatan masyarakat
-    - jurusan kesehatan masyarakat
-    - jurusan di FKM
+    - fakultas kesehatan masyarakat
+    - fe
+    - fk
+    - ft
+    - fp
+    - fkip
+    - fisip
+    - fmipa
+    - fasilkom
+    - fkm
 - intent: faq/ask_jumlah_jurusan_program_pascasarjana
   examples: |
     - jumlah jurusan di program pascasarjana
