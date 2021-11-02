@@ -24,7 +24,15 @@ rules:
 
   - rule: jumlah jurusan fakultas
     steps:
-    - intent: faq/ask_jumlah_jurusan_fakultas
+    - intent: ask_jumlah_jurusan_fakultas
     - action: action_jumlah_jurusan_fakultas
 
-#jalankan dulu rasa run actions
+  - rule: nama jurusan di fakultas tertentu
+    steps:
+    - intent: ask_jurusan_fakultas
+    - action: action_jurusan_fakultas
+
+  - rule: nama wakil rektor
+    steps:
+    - intent: ask_wakil_rektor
+    - action: action_wakil_rektor

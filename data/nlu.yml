@@ -1,5 +1,6 @@
 version: "2.0"
 nlu:
+# ini adalah intent chitchat yang berguna untuk menanyakan agar interaktif
 - intent: chitchat/greet
   examples: |
     - Halo
@@ -34,6 +35,8 @@ nlu:
     - Tidak keren
     - Jelek
     - Kurang bagus
+
+#Ini adalah intent frequently ask questions
 - intent: faq/ask_visi
   examples: |
     - sebutkan visi unsri ?
@@ -68,60 +71,6 @@ nlu:
     - fakultas di unsri
     - fakultas
     - Fakultas yang ada di unsri
-- intent: faq/ask_jumlah_jurusan_fakultas
-  examples: |
-    - jumlah jurusan di [fakultas ekonomi](fakultas)
-    - berapa banyak jurusan di [fakultas ekonomi](fakultas) ?
-    - ada berapa jumlah jurusan di [fakultas ekonomi](fakultas) ?
-    - jumlah jurusan di [FE](fakultas) unsri
-- intent: faq/ask_jurusan_fakultas
-  examples: |
-    - sebutkan jurusan yang ada di [fakultas ekonomi](fakultas) ?
-    - jurusan di [fakultas ekonomi](fakultas)
-    - jurusan di [FE](fakultas)
-- lookup: fakultas
-  examples: |
-    - fakultas ekonomi
-    - fakultas hukum
-    - fakultas teknik
-    - fakultas kedokteran
-    - fakultas pertanian
-    - fakultas keguruan dan ilmu pendidikan
-    - fakultas ilmu sosial dan ilmu politik
-    - fakultas matematika dan ilmu pengetahuan alam
-    - fakultas ilmu komputer
-    - fakultas kesehatan masyarakat
-    - fe
-    - fk
-    - ft
-    - fp
-    - fkip
-    - fisip
-    - fmipa
-    - fasilkom
-    - fkm
-- intent: faq/ask_jumlah_jurusan_program_pascasarjana
-  examples: |
-    - jumlah jurusan di program pascasarjana
-    - berapa banyak jurusan di program pascasarjana ?
-    - ada berapa jumlah jurusan di program pascasarjana
-    - jumlah jurusan di program pascasarjana unsri
-- intent: faq/ask_jurusan_program_pascasarjana
-  examples: |
-    - sebutkan jurusan yang ada di program pascasarjana ?
-    - jurusan di program pascasarjana
-    - jurusan program pascasarjana
-- intent: faq/ask_jumlah_jurusan_program_profesi
-  examples: |
-    - jumlah jurusan di program profesi
-    - berapa banyak jurusan di program profesi ?
-    - ada berapa jumlah jurusan di program profesi
-    - jumlah jurusan di program profesi unsri
-- intent: faq/ask_jurusan_program_profesi
-  examples: |
-    - sebutkan jurusan yang ada di program profesi ?
-    - jurusan di program profesi
-    - jurusan program profesi
 - intent: faq/ask_repelita
   examples: |
     - rencana pembangunan 5 tahun unsri
@@ -144,35 +93,6 @@ nlu:
     - rektor unsri
     - sebtukan rektor unsri ?
     - Rektor unsri siapa ?
-- intent: faq/ask_wakil_rektor_I
-  examples: |
-    - nama wakil rektor I universitas sriwijaya
-    - siapa wakil rektor I universitas sriwijaya
-    - wakil rektor I
-    - wakil rektor I unsri
-    - sebtukan wakil rektor I unsri ?
-- intent: faq/ask_wakil_rektor_II
-  examples: |
-    - nama wakil rektor II universitas sriwijaya
-    - siapa wakil rektor II universitas sriwijaya
-    - wakil rektor II
-    - wakil rektor II unsri
-    - sebtukan wakil rektor II unsri ?
-    - Wakil rektor II
-- intent: faq/ask_wakil_rektor_III
-  examples: |
-    - nama wakil rektor III universitas sriwijaya
-    - siapa wakil rektor III universitas sriwijaya
-    - wakil rektor III
-    - wakil rektor III unsri
-    - sebtukan wakil rektor III unsri ?
-- intent: faq/ask_wakil_rektor_IV
-  examples: |
-    - nama wakil rektor IV universitas sriwijaya
-    - siapa wakil rektor IV universitas sriwijaya
-    - wakil rektor IV
-    - wakil rektor IV unsri
-    - sebtukan wakil rektor IV unsri ?
 - intent: faq/ask_ketua_lp2m
   examples: |
     - nama ketua lp2m universitas sriwijaya
@@ -373,10 +293,80 @@ nlu:
     - satu satuan kredit terdiri dari?
     - 1 satuan kredit unsri
     - apa saja yang ada pada satu satuan kredit?
+
+# ini adalah contoh penggunaan entitas, label, dan lookup
+- intent: ask_wakil_rektor
+  examples: |
+    - nama wakil rektor [wkke](wkke) universitas sriwijaya
+    - siapa wakil rektor [wkke](wkke) universitas sriwijaya
+    - wakil rektor [wkke](wkke)
+    - wakil rektor [wkke](wkke) unsri
+    - sebtukan wakil rektor [wkke](wkke) unsri ?
+- lookup: wkke
+  examples: |
+    - I
+    - II
+    - III
+    - IV
+    - pertama
+    - kedua
+    - ketiga
+    - keempat
+    - 1
+    - 2
+    - 3
+    - 4
+- intent: ask_jumlah_jurusan_fakultas
+  examples: |
+    - jumlah jurusan di [fakultas](fakultas)
+    - berapa banyak jurusan di [fakultas](fakultas) ?
+    - ada berapa jumlah jurusan di [fakultas](fakultas) ?
+    - jumlah jurusan di [fakultas](fakultas) unsri
+- intent: ask_jurusan_fakultas
+  examples: |
+    - sebutkan jurusan yang ada di [fakultas](fakultas) ?
+    - jurusan di [fakultas](fakultas)
+    - jurusan di [fakultas](fakultas)
+- lookup: fakultas
+  examples: |
+    - fakultas ekonomi
+    - fakultas hukum
+    - fakultas teknik
+    - fakultas kedokteran
+    - fakultas pertanian
+    - fakultas keguruan dan ilmu pendidikan
+    - fakultas ilmu sosial dan ilmu politik
+    - fakultas matematika dan ilmu pengetahuan alam
+    - fakultas ilmu komputer
+    - fakultas kesehatan masyarakat
+    - program pascasarjana
+    - program profesi
+    - FE
+    - FK
+    - FT
+    - FP
+    - FKIP
+    - FISIP
+    - FMIPA
+    - FASILKOM
+    - FKM
+    - fe
+    - fk
+    - ft
+    - fp
+    - fkip
+    - fisip
+    - fmipa
+    - fasilkom
+    - fkm
+
+# ini adalah intent yang disiapkan apabila user menginputkan diluar batas bahasan
 - intent: out_of_intent
   examples: |
     - sejarah universitas sriwijaya
     - makna lambang universitas sriwijaya
+
+# ini adalah intent yang berguna jika user menanyakan hal yang kurang lengkap
 - intent: minus_param
   examples: |
     - jurusan fakultas
