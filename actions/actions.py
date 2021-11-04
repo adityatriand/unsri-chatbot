@@ -98,7 +98,7 @@ class WakilRektor(Action):
 		for x in tracker.latest_message['entities']:
 			name = ''
 			if(x['entity']=='posisi_wakil'):
-				name = x['value']
+				name = str(x['value'])
 				if (name == 'I' or name == 'pertama' or name == '1'):
 					dispatcher.utter_message(response="utter_faq/ask_wakil_rektor_I")
 				elif (name == 'II' or name == 'kedua' or name == '2'):
@@ -108,7 +108,7 @@ class WakilRektor(Action):
 				elif (name == 'IV' or name == 'keempat' or name == '4'):
 					dispatcher.utter_message(response="utter_faq/ask_wakil_rektor_IV")
 				else:
-					dispatcher.utter_message(response="utter_minus_param")
+					dispatcher.utter_message(response="utter_respon_failed")
 			else:
-				dispatcher.utter_message(response="utter_respon_failed")
+				dispatcher.utter_message(response="utter_minus_param")
 		return []

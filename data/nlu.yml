@@ -294,51 +294,51 @@ nlu:
     - 1 satuan kredit unsri
     - apa saja yang ada pada satu satuan kredit?
 
-# ini adalah contoh penggunaan entitas, label, dan lookup
+# ini adalah contoh penggunaan entitas
 - intent: ask_wakil_rektor
   examples: |
-    - nama wakil rektor [I]{"entity":"posisi_wakil","value":"I"} universitas sriwijaya
-    - siapa wakil rektor [I]{"entity":"posisi_wakil","value":"I"} universitas sriwijaya
-    - wakil rektor [I]{"entity":"posisi_wakil","value":"I"}
-    - wakil rektor [I]{"entity":"posisi_wakil","value":"I"}
-    - sebtukan wakil rektor [I]{"entity":"posisi_wakil","value":"I"} unsri ?
-    - nama wakil rektor [II]{"entity":"posisi_wakil","value":"II"} universitas sriwijaya
-    - siapa wakil rektor [II]{"entity":"posisi_wakil","value":"II"} universitas sriwijaya
-    - wakil rektor [II]{"entity":"posisi_wakil","value":"II"}
-    - wakil rektor [II]{"entity":"posisi_wakil","value":"II"}
-    - sebtukan wakil rektor [II]{"entity":"posisi_wakil","value":"II"} unsri ?
-    - nama wakil rektor [III]{"entity":"posisi_wakil","value":"III"} universitas sriwijaya
-    - siapa wakil rektor [III]{"entity":"posisi_wakil","value":"III"} universitas sriwijaya
-    - wakil rektor [III]{"entity":"posisi_wakil","value":"III"}
-    - wakil rektor [III]{"entity":"posisi_wakil","value":"III"}
-    - sebtukan wakil rektor [III]{"entity":"posisi_wakil","value":"IV"} unsri ?
-    - nama wakil rektor [IV]{"entity":"posisi_wakil","value":"IV"} universitas sriwijaya
-    - siapa wakil rektor [IV]{"entity":"posisi_wakil","value":"IV"} universitas sriwijaya
-    - wakil rektor [IV]{"entity":"posisi_wakil","value":"IV"}
-    - wakil rektor [IV]{"entity":"posisi_wakil","value":"IV"}
-    - sebtukan wakil rektor [IV]{"entity":"posisi_wakil","value":"IV"} unsri ?
+    - nama wakil rektor [pertama]{"entity":"posisi_wakil","value":"pertama"} universitas sriwijaya
+    - siapa wakil rektor [pertama]{"entity":"posisi_wakil","value":"pertama"} universitas sriwijaya
+    - wakil rektor [pertama]{"entity":"posisi_wakil","value":"pertama"}
+    - sebtukan wakil rektor [pertama]{"entity":"posisi_wakil","value":"pertama"} unsri ?
+    - nama wakil rektor [kedua]{"entity":"posisi_wakil","value":"kedua"} universitas sriwijaya
+    - siapa wakil rektor [kedua]{"entity":"posisi_wakil","value":"kedua"} universitas sriwijaya
+    - wakil rektor [kedua]{"entity":"posisi_wakil","value":"kedua"}
+    - sebtukan wakil rektor [kedua]{"entity":"posisi_wakil","value":"kedua"} unsri ?
+    - nama wakil rektor [ketiga]{"entity":"posisi_wakil","value":"ketiga"} universitas sriwijaya
+    - siapa wakil rektor [ketiga]{"entity":"posisi_wakil","value":"ketiga"} universitas sriwijaya
+    - wakil rektor [ketiga]{"entity":"posisi_wakil","value":"ketiga"}
+    - sebtukan wakil rektor [ketiga]{"entity":"posisi_wakil","value":"ketiga"} unsri ?
+    - nama wakil rektor [keempat]{"entity":"posisi_wakil","value":"keempat"} universitas sriwijaya
+    - siapa wakil rektor [keempat]{"entity":"posisi_wakil","value":"keempat"} universitas sriwijaya
+    - wakil rektor [keempat]{"entity":"posisi_wakil","value":"keempat"}
+    - sebtukan wakil rektor [keempat]{"entity":"posisi_wakil","value":"keempat"} unsri ?
 #- lookup: posisi_wakil
 #  examples: |
 #    - I
 #    - II
 #    - III
 #    - IV
-- synonym: I
+- synonym: pertama
   examples: |
-    - pertama
+    - I
     - 1
-- synonym: II
+    - satu
+- synonym: kedua
   examples: |
-    - kedua
+    - dua
     - 2
-- synonym: III
+    - II
+- synonym: ketiga
   examples: |
-    - ketiga
+    - tiga
     - 3
-- synonym: IV
+    - III
+- synonym: keempat
   examples: |
-    - keempat
+    - empat
     - 4
+    - IV
 - intent: ask_jumlah_jurusan_fakultas
   examples: |
     - berapa banyak jurusan di [fakultas ekonomi]{"entity":"nama_fakultas","role":"jumlah","value":"fakultas ekonomi"} ?
