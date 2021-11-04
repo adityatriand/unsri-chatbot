@@ -96,16 +96,15 @@ class WakilRektor(Action):
 	def run(self, dispatcher: CollectingDispatcher,tracker: Tracker,domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 
 		for x in tracker.latest_message['entities']:
-			name = ''
 			if(x['entity']=='posisi_wakil'):
-				name = str(x['value'])
-				if (name == 'I' or name == 'pertama' or name == '1'):
+				name = x['value']
+				if (name == 'I' or name == 'pertama' or name == 1 or name == '1'):
 					dispatcher.utter_message(response="utter_faq/ask_wakil_rektor_I")
-				elif (name == 'II' or name == 'kedua' or name == '2'):
+				elif (name == 'II' or name == 'kedua' or name == 2 or name == '2'):
 					dispatcher.utter_message(response="utter_faq/ask_wakil_rektor_II")
-				elif (name == 'III' or name == 'ketiga' or name == '3'):
+				elif (name == 'III' or name == 'ketiga' or name == 3 or name == '3'):
 					dispatcher.utter_message(response="utter_faq/ask_wakil_rektor_III")
-				elif (name == 'IV' or name == 'keempat' or name == '4'):
+				elif (name == 'IV' or name == 'keempat' or name == 4 or name == '4'):
 					dispatcher.utter_message(response="utter_faq/ask_wakil_rektor_IV")
 				else:
 					dispatcher.utter_message(response="utter_respon_failed")
