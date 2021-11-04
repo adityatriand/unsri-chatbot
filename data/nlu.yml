@@ -317,7 +317,12 @@ nlu:
     - wakil rektor [IV]{"entity":"posisi_wakil","value":"IV"}
     - wakil rektor [IV]{"entity":"posisi_wakil","value":"IV"}
     - sebtukan wakil rektor [IV]{"entity":"posisi_wakil","value":"IV"} unsri ?
-
+- lookup: posisi_wakil
+  examples: |
+    - I
+    - II
+    - III
+    - IV
 - synonym: I
   examples: |
     - pertama
@@ -367,6 +372,21 @@ nlu:
     - jurusan di [fakultas kesehatan masyarakat]{"entity":"nama_fakultas","role":"nama","value":"fakultas kesehatan masyarakat"} unsri
     - jurusan di [program pascasarjana]{"entity":"nama_fakultas","role":"nama"} unsri
     - jurusan di [program profesi]{"entity":"nama_fakultas","role":"nama"} unsri
+
+- lookup: nama_fakultas
+  examples: |
+    - fakultas ekonomi
+    - fakultas hukum
+    - fakultas teknik
+    - fakultas kedokteran
+    - fakultas pertanian
+    - fakultas keguruan dan ilmu pendidikan
+    - fakultas ilmu sosial dan ilmu politik
+    - fakultas matematika dan ilmu pengetahuan alam
+    - fakultas ilmu komputer
+    - fakultas kesehatan masyarakat
+    - program pascasarjana
+    - program profesi
 
 - synonym: fakultas ekonomi
   examples: |
