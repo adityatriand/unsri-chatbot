@@ -13,12 +13,22 @@ intents:
     use_entities: true
 - minus_param:
     use_entities: true
+- ask_jurusan_fakultas:
+    use_entities: true
+- ask_jumlah_jurusan_fakultas:
+    use_entities: true
+- ask_wakil_rektor:
+    use_entities: true
 actions:
   - action_jumlah_jurusan_fakultas
+  - action_jurusan_fakultas
+  - action_wakil_rektor
 entities: 
   - fakultas
+  - wkke
 slots: {}
 responses:
+  # ini adalah utter untuk chitchat
   utter_chitchat/greet:
   - text: Hallo, ada yang bisa saya bantu ?
   utter_chitchat/ask_name:
@@ -31,6 +41,8 @@ responses:
   - text: Senang bisa membantu kebingunganmu :D
   utter_chitchat/bad_end_ask:
   - text: Maaf kami akan segera memperbaiki kesalahan yang terjadi di masa yang akan datang
+
+  #ini adalah utter untuk faq
   utter_faq/ask_visi:
   - text: Visi Universitas Sriwijaya adalah menjadi perguruan tinggi terkemuka dan berbasis riset yang unggul dalam bidang ilmu pengetahuan dan teknologi
   utter_faq/ask_misi:
