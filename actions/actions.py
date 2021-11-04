@@ -12,11 +12,12 @@ class JumlahJurusanFakultas(Action):
 	def run(self, dispatcher: CollectingDispatcher,tracker: Tracker,domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 
 		for x in tracker.latest_message['entities']:
-			if(x['entity']=='fakultas'):
+			name = ''
+			if(x['entity']=='nama_fakultas'):
 				name = x['value']
 				if (name == 'fakultas ekonomi' or name == 'FE'or name=='fe'):
 					dispatcher.utter_message(response="utter_faq/ask_jumlah_jurusan_fakultas_ekonomi")
-				elif(name== 'fakultas_hukum'or name == 'FH' or name == 'fh'):
+				elif(name== 'fakultas hukum'or name == 'FH' or name == 'fh'):
 					dispatcher.utter_message(response="utter_faq/ask_jumlah_jurusan_fakultas_hukum")
 				elif(name == 'fakultas teknik' or name == 'FT' or name == 'ft'):
 					dispatcher.utter_message(response="utter_faq/ask_jumlah_jurusan_fakultas_teknik")
@@ -39,7 +40,9 @@ class JumlahJurusanFakultas(Action):
 				elif (name == 'program profesi'):
 					dispatcher.utter_message(response="utter_faq/ask_jumlah_jurusan_program_profesi")
 				else:
-					dispatcher.utter_message(response="utter_respon_failed")
+					dispatcher.utter_message(response="utter_minus_param")
+			else:
+				dispatcher.utter_message(response="utter_respon_failed")
 		return []
 
 class JurusanFakultas(Action):
@@ -51,11 +54,12 @@ class JurusanFakultas(Action):
 	def run(self, dispatcher: CollectingDispatcher,tracker: Tracker,domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 
 		for x in tracker.latest_message['entities']:
-			if(x['entity']=='fakultas'):
+			name = ''
+			if(x['entity']=='nama_fakultas'):
 				name = x['value']
 				if (name == 'fakultas ekonomi' or name == 'FE'or name=='fe'):
 					dispatcher.utter_message(response="utter_faq/ask_jurusan_fakultas_ekonomi")
-				elif(name== 'fakultas_hukum'or name == 'FH' or name == 'fh'):
+				elif(name== 'fakultas hukum'or name == 'FH' or name == 'fh'):
 					dispatcher.utter_message(response="utter_faq/ask_jurusan_fakultas_hukum")
 				elif(name == 'fakultas teknik' or name == 'FT' or name == 'ft'):
 					dispatcher.utter_message(response="utter_faq/ask_jurusan_fakultas_teknik")
@@ -78,7 +82,9 @@ class JurusanFakultas(Action):
 				elif (name == 'program profesi'):
 					dispatcher.utter_message(response="utter_faq/ask_jurusan_program_profesi")
 				else:
-					dispatcher.utter_message(response="utter_respon_failed")
+					dispatcher.utter_message(response="utter_minus_param")
+			else:
+				dispatcher.utter_message(response="utter_respon_failed")
 		return []
 
 class WakilRektor(Action):
@@ -90,7 +96,8 @@ class WakilRektor(Action):
 	def run(self, dispatcher: CollectingDispatcher,tracker: Tracker,domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 
 		for x in tracker.latest_message['entities']:
-			if(x['entity']=='wkke'):
+			name = ''
+			if(x['entity']=='posisi_wakil'):
 				name = x['value']
 				if (name == 'I' or name == 'pertama' or name == '1'):
 					dispatcher.utter_message(response="utter_faq/ask_wakil_rektor_I")
@@ -101,5 +108,7 @@ class WakilRektor(Action):
 				elif (name == 'IV' or name == 'keempat' or name == '4'):
 					dispatcher.utter_message(response="utter_faq/ask_wakil_rektor_IV")
 				else:
-					dispatcher.utter_message(response="utter_respon_failed")
+					dispatcher.utter_message(response="utter_minus_param")
+			else:
+				dispatcher.utter_message(response="utter_respon_failed")
 		return []

@@ -20,8 +20,8 @@ pipeline:
   retrieval_intent: chitchat
 - name: FallbackClassifier
   threshold: 0.7
-- name: RegexEntityExtractor
-  use_lookup_tables: True
+#- name: RegexEntityExtractor
+#  use_lookup_tables: True
 timezone: etc/localtime
 policies:
 - name: RulePolicy
