@@ -77,7 +77,7 @@ nlu:
     - bagaimana repelita universitas sriwijaya
     - strategi apa yang unsri rencanakan untuk pembangunan 5 tahun kedepan
     - rencana pembangunan universitas sriwijaya 5 tahun yang akan datang
-- intent: faq/ask_pimpinan_dan_spi
+- intent: faq/ask_pimpinan_unsri_dan_spi
   examples: |
     - pimpinan universitas sriwijaya
     - satuan pengawas internal
@@ -297,67 +297,116 @@ nlu:
 # ini adalah contoh penggunaan entitas, label, dan lookup
 - intent: ask_wakil_rektor
   examples: |
-    - nama wakil rektor [wkke](wkke) universitas sriwijaya
-    - siapa wakil rektor [wkke](wkke) universitas sriwijaya
-    - wakil rektor [wkke](wkke)
-    - wakil rektor [wkke](wkke) unsri
-    - sebtukan wakil rektor [wkke](wkke) unsri ?
-- lookup: wkke
+    - nama wakil rektor [I]{"entity":"posisi_wakil","value":"I"} universitas sriwijaya
+    - siapa wakil rektor [I]{"entity":"posisi_wakil","value":"I"} universitas sriwijaya
+    - wakil rektor [I]{"entity":"posisi_wakil","value":"I"}
+    - wakil rektor [I]{"entity":"posisi_wakil","value":"I"}
+    - sebtukan wakil rektor [I]{"entity":"posisi_wakil","value":"I"} unsri ?
+    - nama wakil rektor [II]{"entity":"posisi_wakil","value":"II"} universitas sriwijaya
+    - siapa wakil rektor [II]{"entity":"posisi_wakil","value":"II"} universitas sriwijaya
+    - wakil rektor [II]{"entity":"posisi_wakil","value":"II"}
+    - wakil rektor [II]{"entity":"posisi_wakil","value":"II"}
+    - sebtukan wakil rektor [II]{"entity":"posisi_wakil","value":"II"} unsri ?
+    - nama wakil rektor [III]{"entity":"posisi_wakil","value":"III"} universitas sriwijaya
+    - siapa wakil rektor [III]{"entity":"posisi_wakil","value":"III"} universitas sriwijaya
+    - wakil rektor [III]{"entity":"posisi_wakil","value":"III"}
+    - wakil rektor [III]{"entity":"posisi_wakil","value":"III"}
+    - sebtukan wakil rektor [III]{"entity":"posisi_wakil","value":"IV"} unsri ?
+    - nama wakil rektor [IV]{"entity":"posisi_wakil","value":"IV"} universitas sriwijaya
+    - siapa wakil rektor [IV]{"entity":"posisi_wakil","value":"IV"} universitas sriwijaya
+    - wakil rektor [IV]{"entity":"posisi_wakil","value":"IV"}
+    - wakil rektor [IV]{"entity":"posisi_wakil","value":"IV"}
+    - sebtukan wakil rektor [IV]{"entity":"posisi_wakil","value":"IV"} unsri ?
+
+- synonym: I
   examples: |
-    - I
-    - II
-    - III
-    - IV
     - pertama
-    - kedua
-    - ketiga
-    - keempat
     - 1
+- synonym: II
+  examples: |
+    - kedua
     - 2
+- synonym: III
+  examples: |
+    - ketiga
     - 3
+- synonym: IV
+  examples: |
+    - keempat
     - 4
 - intent: ask_jumlah_jurusan_fakultas
   examples: |
-    - jumlah jurusan di [fakultas](fakultas)
-    - berapa banyak jurusan di [fakultas](fakultas) ?
-    - ada berapa jumlah jurusan di [fakultas](fakultas) ?
-    - jumlah jurusan di [fakultas](fakultas) unsri
+    - jumlah jurusan di [fakultas ekonomi]{"entity":"nama_fakultas","role":"jumlah"}
+    - berapa banyak jurusan di [fakultas ekonomi]{"entity":"nama_fakultas","role":"jumlah"} ?
+    - ada berapa jumlah jurusan di [fakultas ekonomi]{"entity":"nama_fakultas","role":"jumlah"} ?
+    - jumlah jurusan di [fakultas ekonomi]{"entity":"nama_fakultas","role":"jumlah","value":"fakultas ekonomi"} unsri
+    - jumlah jurusan di [fakultas hukum]{"entity":"nama_fakultas","role":"jumlah","value":"fakultas hukum"} unsri
+    - jumlah jurusan di [fakultas teknik]{"entity":"nama_fakultas","role":"jumlah","value":"fakultas teknik"} unsri
+    - jumlah jurusan di [fakultas kedokteran]{"entity":"nama_fakultas","role":"jumlah","value":"fakultas kedokteran"} unsri
+    - jumlah jurusan di [fakultas pertanian]{"entity":"nama_fakultas","role":"jumlah","value":"fakultas pertanian"} unsri
+    - jumlah jurusan di [fakultas keguruan dan ilmu pendidikan]{"entity":"nama_fakultas","role":"jumlah","value":"fakultas keguruan dan ilmu pendidikan"} unsri
+    - jumlah jurusan di [fakultas ilmu sosial dan ilmu politik]{"entity":"nama_fakultas","role":"jumlah","value":"fakultas ilmu sosial dan ilmu politik"} unsri
+    - jumlah jurusan di [fakultas matematika dan ilmu pengetahuan]{"entity":"nama_fakultas","role":"jumlah","value":"fakultas matematika dan ilmu pengetahuan"} unsri
+    - jumlah jurusan di [fakultas ilmu komputer]{"entity":"nama_fakultas","role":"jumlah","value":"fakultas ilmu komputer"} unsri
+    - jumlah jurusan di [fakultas kesehatan masyarakat]{"entity":"nama_fakultas","role":"jumlah","value":"fakultas kesehatan masyarakat"} unsri
+    - jumlah jurusan di [program pascasarjana]{"entity":"nama_fakultas","role":"jumlah"} unsri
+    - jumlah jurusan di [program profesi]{"entity":"nama_fakultas","role":"jumlah"} unsri
+
 - intent: ask_jurusan_fakultas
   examples: |
-    - sebutkan jurusan yang ada di [fakultas](fakultas) ?
-    - jurusan di [fakultas](fakultas)
-    - jurusan di [fakultas](fakultas)
-- lookup: fakultas
+    - sebutkan jurusan yang ada di [fakultas ekonomi]{"entity":"nama_fakultas","role":"nama"} ?
+    - jurusan di [fakultas ekonomi]{"entity":"nama_fakultas","role":"nama","value":"fakultas ekonomi"} unsri
+    - jurusan di [fakultas hukum]{"entity":"nama_fakultas","role":"nama","value":"fakultas hukum"} unsri
+    - jurusan di [fakultas teknik]{"entity":"nama_fakultas","role":"nama","value":"fakultas teknik"} unsri
+    - jurusan di [fakultas kedokteran]{"entity":"nama_fakultas","role":"nama","value":"fakultas kedokteran"} unsri
+    - jurusan di [fakultas pertanian]{"entity":"nama_fakultas","role":"nama","value":"fakultas pertanian"} unsri
+    - jurusan di [fakultas keguruan dan ilmu pendidikan]{"entity":"nama_fakultas","role":"nama","value":"fakultas keguruan dan ilmu pendidikan"} unsri
+    - jurusan di [fakultas ilmu sosial dan ilmu politik]{"entity":"nama_fakultas","role":"nama","value":"fakultas ilmu sosial dan ilmu politik"} unsri
+    - jurusan di [fakultas matematika dan ilmu pengetahuan]{"entity":"nama_fakultas","role":"nama","value":"fakultas matematika dan ilmu pengetahuan"} unsri
+    - jurusan di [fakultas ilmu komputer]{"entity":"nama_fakultas","role":"nama","value":"fakultas ilmu komputer"} unsri
+    - jurusan di [fakultas kesehatan masyarakat]{"entity":"nama_fakultas","role":"nama","value":"fakultas kesehatan masyarakat"} unsri
+    - jurusan di [program pascasarjana]{"entity":"nama_fakultas","role":"nama"} unsri
+    - jurusan di [program profesi]{"entity":"nama_fakultas","role":"nama"} unsri
+
+- synonym: fakultas ekonomi
   examples: |
-    - fakultas ekonomi
-    - fakultas hukum
-    - fakultas teknik
-    - fakultas kedokteran
-    - fakultas pertanian
-    - fakultas keguruan dan ilmu pendidikan
-    - fakultas ilmu sosial dan ilmu politik
-    - fakultas matematika dan ilmu pengetahuan alam
-    - fakultas ilmu komputer
-    - fakultas kesehatan masyarakat
-    - program pascasarjana
-    - program profesi
     - FE
-    - FK
-    - FT
-    - FP
-    - FKIP
-    - FISIP
-    - FMIPA
-    - FASILKOM
-    - FKM
     - fe
-    - fk
+- synonym: fakultas hukum
+  examples: |
+    - FH
+    - fh
+- synonym: fakultas teknik
+  examples: |
+    - FT
     - ft
+- synonym: fakultas kedokteran
+  examples: |
+    - FK
+    - fk
+- synonym: fakultas pertanian
+  examples: |
+    - FP
     - fp
+- synonym: fakultas keguruan dan ilmu pendidikan
+  examples: |
+    - FKIP
     - fkip
+- synonym: fakultas ilmu sosial dan ilmu politik
+  examples: |
+    - FISIP
     - fisip
+- synonym: fakultas matematika dan ilmu pengetahuan
+  examples: |
+    - FMIPA
     - fmipa
+- synonym: fakultas ilmu komputer
+  examples: |
+    - FASILKOM
     - fasilkom
+- synonym: fakultas kesehatan masyarakat
+  examples: |
+    - FKM
     - fkm
 
 # ini adalah intent yang disiapkan apabila user menginputkan diluar batas bahasan
