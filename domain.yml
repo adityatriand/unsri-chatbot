@@ -19,27 +19,84 @@ intents:
     use_entities: true
 - ask_wakil_rektor:
     use_entities: true
+- respon_jawaban:
+    use_entities: true
+- nama_user:
+    use_entities: true
+- pendapat_user:
+    use_entities: true
 entities:
 - nama_fakultas
 - posisi_wakil
-slots: {}
+- respon
+- nama
+- pendapat
+slots: 
+  nama:
+    type: text
+    influence_conversation: true
+  pendapat:
+    type: text
+    influence_conversation: true
 responses:
   utter_chitchat/greet:
   - text: Hallo, ada yang bisa saya bantu ?
   utter_chitchat/ask_name:
-  - text: Halo, saya adalah sebuah bot bernama Unsri Bot
-  - text: Saya adalah Unsri Bot
+  - buttons:
+    - payload: iya
+      title: IYA
+    - payload: tidak
+      title: TIDAK
+    text: Halo, saya adalah sebuah bot bernama Unsri Bot. Apakah jawaban ini sudah sesuai permintaan ?
+  - buttons:
+    - payload: iya
+      title: IYA
+    - payload: tidak
+      title: TIDAK
+    text: Saya adalah Unsri Bot. Apakah jawaban ini sudah sesuai permintaan ?
   utter_chitchat/ask_goals:
-  - text: Saya akan membantu menjawab kebingungan Anda seputar Universitas Sriwijaya
-  - text: Saya dibuat untuk menjawab pertanyaan seputar Universitas Sriwijaya
+  - buttons:
+    - payload: iya
+      title: IYA
+    - payload: tidak
+      title: TIDAK
+    text: Saya akan membantu menjawab kebingungan Anda seputar Universitas Sriwijaya. Apakah jawaban ini sudah sesuai permintaan ?
+  - buttons:
+    - payload: iya
+      title: IYA
+    - payload: tidak
+      title: TIDAK
+    text: Saya dibuat untuk menjawab pertanyaan seputar Universitas Sriwijaya. Apakah jawaban ini sudah sesuai permintaan ?
   utter_chitchat/happy_end_ask:
-  - text: Senang bisa membantu kebingunganmu :D
+  - buttons:
+    - payload: tanya
+      title: YA
+    - payload: feedback
+      title: TIDAK
+    image: https://www.seekpng.com/png/full/8-84761_share-this-image-smiling-cartoon-face.png
+    text: Senang bisa membantu kebingunganmu. Apakah ada pertanyaan lain ?
   utter_chitchat/bad_end_ask:
-  - text: Maaf kami akan segera memperbaiki kesalahan yang terjadi di masa yang akan datang
+  - buttons:
+    - payload: tanya
+      title: YA
+    - payload: feedback
+      title: TIDAK
+    image: https://www.psychologicalscience.org/redesign/wp-content/uploads/2016/05/PAFF_052416_SixElementsApology_Vectorguy_newsfeature1-300x250.jpg
+    text: Maaf kami akan segera memperbaiki kesalahan yang terjadi di masa yang akan datang. Apakah ada pertanyaan lain ?
   utter_faq/ask_visi:
-  - text: Visi Universitas Sriwijaya adalah menjadi perguruan tinggi terkemuka dan berbasis riset yang unggul dalam bidang ilmu pengetahuan dan teknologi
+  - buttons:
+    - payload: iya
+      title: YA
+    - payload: tidak
+      title: TIDAK
+    text: Visi Universitas Sriwijaya adalah menjadi perguruan tinggi terkemuka dan berbasis riset yang unggul dalam bidang ilmu pengetahuan dan teknologi. Apakah jawaban ini sudah sesuai permintaan ?
   utter_faq/ask_misi:
-  - text: |
+  - buttons:
+    - payload: iya
+      title: YA
+    - payload: tidak
+      title: TIDAK
+    text: |
       Misi Universitas Sriwijaya adalah
 
       1. Menyelenggarakan dan mengembangkan pendidikan tinggi dalam upaya menghasilkan manusia  terdidik yang dapat menerapkan, mengembangkan, dan/atau menciptakan ilmu pengetahuan dan/atau teknologi
@@ -48,8 +105,15 @@ responses:
       4. Menyelenggarakan pembinaan dan pengembangan bakat, minat, penalaran, dan kesejahteraan mahasiswa.
       5. Menyelenggarakan kerjasama dengan lembaga lain, baik nasional maupun internasional, dan
       6. Mewujudkan sistem manajemen perguruan tinggi yang profesional, efektif, efisien, dan akuntabel.
+
+      Apakah jawaban ini sudah sesuai permintaan ?
   utter_faq/ask_tujuan:
-  - text: |
+  - buttons:
+    - payload: iya
+      title: YA
+    - payload: tidak
+      title: TIDAK
+    text: |
       Tujuan Universitas Sriwijaya adalah
 
       1. Menghasilkan lulusan yang berakhlak mulia, berkualitas dan mandiri.
@@ -59,10 +123,24 @@ responses:
       5. Meningkatkan peran sebagai pusat pengembangan ilmu, teknologi, informasi, komunikasi, olahraga dan seni.
       6. Meningkatkan peran aktif dalam membantu pemerintah dan masyarakat dan,
       7. Meningkatkan kinerja dan tanggung jawab, secara efektif dan efisien, terpadu, relevan dan berkelanjutan
+
+      Apakah jawaban ini sudah sesuai permintaan ?
   utter_faq/ask_jumlah_fakultas:
-  - text: Jumlah fakultas di Universitas Sriwijaya ada 12 Fakultas
+  - buttons:
+    - payload: fakultas
+      title: LIHAT FAKULTAS
+    - payload: iya
+      title: IYA
+    - payload: tidak
+      title: TIDAK
+    text: Jumlah fakultas di Universitas Sriwijaya ada 12 Fakultas. Apakah jawaban ini sudah sesuai permintaan ?
   utter_faq/ask_fakultas:
-  - text: |
+  - buttons:
+    - payload: iya
+      title: IYA
+    - payload: tidak
+      title: TIDAK
+    text: |-
       Berikut fakultas yang ada di Universitas Sriwijaya
 
       1.  Fakultas Ekonomi (FE)
@@ -77,10 +155,24 @@ responses:
       10. Fakultas Kesehatan Masyarakat (FKM)
       11. Program Pascasarjana
       12. Program Profesi
+
+      Apakah jawaban ini sudah sesuai permintaan ?
   utter_faq/ask_jumlah_jurusan_fakultas_ekonomi:
-  - text: Jumlah jurusan Fakultas Ekonomi ada 10
+  - buttons:
+    - payload: jurusan yang ada di fakultas ekonomi
+      title: JURUSAN EKONOMI
+    - payload: iya
+      title: IYA
+    - payload: tidak
+      title: TIDAK
+    text: Jumlah jurusan Fakultas Ekonomi ada 10. Apakah jawaban ini sudah sesuai permintaan ?
   utter_faq/ask_jurusan_fakultas_ekonomi:
-  - text: |
+  - buttons:
+    - payload: iya
+      title: YA
+    - payload: tidak
+      title: TIDAK
+    text: |
       Berikut jurusan yang ada di Fakultas Ekonomi Universitas Sriwijaya
 
       1.  Manajemen : Sarjana
@@ -93,20 +185,48 @@ responses:
       8.  Ilmu Manajemen : Magister
       9.  Ilmu Ekonomi : Doktor
       10. Manajemen  : Doktor
+
+      Apakah jawaban ini sudah sesuai permintaan ?
   utter_faq/ask_jumlah_jurusan_fakultas_hukum:
-  - text: Jumlah jurusan Fakultas Hukum ada 4
+  - buttons:
+    - payload: jurusan yang ada di fakultas hukum
+      title: JURUSAN HUKUM
+    - payload: iya
+      title: IYA
+    - payload: tidak
+      title: TIDAK
+    text: Jumlah jurusan Fakultas Hukum ada 4. Apakah jawaban ini sudah sesuai permintaan ?
   utter_faq/ask_jurusan_fakultas_hukum:
-  - text: |
+  - buttons:
+    - payload: iya
+      title: YA
+    - payload: tidak
+      title: TIDAK
+    text: |
       Berikut jurusan yang ada di Fakultas Hukum Universitas Sriwijaya
 
       1.  Ilmu Hukum : Sarjana
       2.  Ilmu Hukum : Magister
       3.  Kenotariatan : Magister
       4.  Ilmu Hukum : Doktor
+
+      Apakah jawaban ini sudah sesuai permintaan ?
   utter_faq/ask_jumlah_jurusan_fakultas_teknik:
-  - text: Jumlah jurusan Fakultas Teknik Universitas Sriwijaya ada 12
+  - buttons:
+    - payload: jurusan yang ada di fakultas teknik
+      title: JURUSAN TEKNIK
+    - payload: iya
+      title: IYA
+    - payload: tidak
+      title: TIDAK
+    text: Jumlah jurusan Fakultas Teknik Universitas Sriwijaya ada 12. Apakah jawaban ini sudah sesuai permintaan ?
   utter_faq/ask_jurusan_fakultas_teknik:
-  - text: |
+  - buttons:
+    - payload: iya
+      title: YA
+    - payload: tidak
+      title: TIDAK
+    text: |
       Berikut jurusan yang ada di Fakultas Teknik Universitas Sriwijaya
 
       1.  Teknik Sipil : Sarjana
@@ -121,10 +241,24 @@ responses:
       10. Teknik Mesin : Magister
       11. Teknik Pertambangan : Magister
       12. Ilmu Teknik : Doktor
+
+      Apakah jawaban ini sudah sesuai permintaan ?
   utter_faq/ask_jumlah_jurusan_fakultas_kedokteran:
-  - text: Jumlah jurusan Fakultas Kedokteran Universitas Sriwijaya ada 17
+  - buttons:
+    - payload: jurusan yang ada di fakultas kedokteran
+      title: JURUSAN KEDOKTERAN
+    - payload: iya
+      title: IYA
+    - payload: tidak
+      title: TIDAK
+    text: Jumlah jurusan Fakultas Kedokteran Universitas Sriwijaya ada 17. Apakah jawaban ini sudah sesuai permintaan ?
   utter_faq/ask_jurusan_fakultas_kedokteran:
-  - text: |
+  - buttons:
+    - payload: iya
+      title: YA
+    - payload: tidak
+      title: TIDAK
+    text: |
       Berikut jurusan yang ada di Fakultas Kedokteran Universitas Sriwijaya
 
       1.  Pendidikan Dokter: Sarjana
@@ -144,10 +278,24 @@ responses:
       15. Kedokteran Klinis: Magister
       16. Ilmu Penyakit Dalam: Spesialis 2 (Subspesialis)
       17. Ilmu Biomedik: Doktor
+
+      Apakah jawaban ini sudah sesuai permintaan ?
   utter_faq/ask_jumlah_jurusan_fakultas_pertanian:
-  - text: Jumlah jurusan Fakultas Pertanian Universitas Sriwijaya ada 13
+  - buttons:
+    - payload: jurusan yang ada di fakultas pertanian
+      title: JURUSAN PERTANIAN
+    - payload: iya
+      title: IYA
+    - payload: tidak
+      title: TIDAK
+    text: Jumlah jurusan Fakultas Pertanian Universitas Sriwijaya ada 13. Apakah jawaban ini sudah sesuai permintaan ?
   utter_faq/ask_jurusan_fakultas_pertanian:
-  - text: |
+  - buttons:
+    - payload: iya
+      title: YA
+    - payload: tidak
+      title: TIDAK
+    text: |
       Berikut jurusan yang ada di Fakultas Pertanian Universitas Sriwijaya
 
       1.  Agribisnis : Sarjana
@@ -163,10 +311,24 @@ responses:
       11. Ilmu Tanaman : Magister
       12. Agribisnis : Magister
       13. Ilmu Pertanian : Magister
+
+      Apakah jawaban ini sudah sesuai permintaan ?
   utter_faq/ask_jumlah_jurusan_fakultas_keguruan:
-  - text: Jumlah jurusan Fakultas Keguruan dan Ilmu Pendidikan Universitas Sriwijaya ada 22
+  - buttons:
+    - payload: jurusan yang ada di fakultas keguruan dan ilmu pendidikan
+      title: JURUSAN FKIP
+    - payload: iya
+      title: IYA
+    - payload: tidak
+      title: TIDAK
+    text: Jumlah jurusan Fakultas Keguruan dan Ilmu Pendidikan Universitas Sriwijaya ada 22. Apakah jawaban ini sudah sesuai permintaan ?
   utter_faq/ask_jurusan_fakultas_keguruan:
-  - text: |
+  - buttons:
+    - payload: iya
+      title: YA
+    - payload: tidak
+      title: TIDAK
+    text: |
       Berikut jurusan yang ada di Fakultas Keguruan dan Ilmu Pendidikan Universitas Sriwijaya
 
       1.  Pendidikan Bahasa Inggris : Sarjana
@@ -191,10 +353,24 @@ responses:
       20. Pendidikan Olahraga : Magister
       21. Pendidikan Fisika : Magister
       22. Pendidikan Matematika : Doktor
+
+      Apakah jawaban ini sudah sesuai permintaan ?
   utter_faq/ask_jumlah_jurusan_fakultas_ilmu_sosial_dan_ilmu_politik:
-  - text: Jumlah jurusan Fakultas Ilmu Sosial dan Ilmu Politik ada 7
+  - buttons:
+    - payload: jurusan yang ada di fakultas ilmu sosial dan ilmu politik
+      title: JURUSAN FISIP
+    - payload: iya
+      title: IYA
+    - payload: tidak
+      title: TIDAK
+    text: Jumlah jurusan Fakultas Ilmu Sosial dan Ilmu Politik ada 7. Apakah jawaban ini sudah sesuai permintaan ?
   utter_faq/ask_jurusan_fakultas_ilmu_sosial_dan_ilmu_politik:
-  - text: |
+  - buttons:
+    - payload: iya
+      title: YA
+    - payload: tidak
+      title: TIDAK
+    text: |
       Berikut jurusan yang ada di Fakultas Ilmu Sosial dan Ilmu Politik Universitas Sriwijaya
 
       1. Administrasi Publik : sarjana
@@ -204,10 +380,24 @@ responses:
       5. Administrasi Publik: Magister
       6. Sosiologi : Magister
       7. Administrasi  Publik : Doktor
+
+      Apakah jawaban ini sudah sesuai permintaan ?
   utter_faq/ask_jumlah_jurusan_fakultas_matematika_dan_ilmu_pengetahuan:
-  - text: Jumlah jurusan Fakultas Matematika dan Ilmu Pengetahuan Universitas Sriwijaya ada 10
+  - buttons:
+    - payload: jurusan yang ada di fakultas matematika dan ilmu pengetahuan
+      title: JURUSAN FMIPA
+    - payload: iya
+      title: IYA
+    - payload: tidak
+      title: TIDAK
+    text: Jumlah jurusan Fakultas Matematika dan Ilmu Pengetahuan Universitas Sriwijaya ada 10. Apakah jawaban ini sudah sesuai permintaan ?
   utter_faq/ask_jurusan_fakultas_matematika_dan_ilmu_pengetahuan:
-  - text: |
+  - buttons:
+    - payload: iya
+      title: YA
+    - payload: tidak
+      title: TIDAK
+    text: |
       Berikut jurusan yang ada di Fakultas Matematika dan Ilmu Pengetahuan Universitas Sriwijaya
 
       1.  Matematika : Sarjana
@@ -220,10 +410,24 @@ responses:
       8.  Kimia : Magister
       9.  Biologi : Magister
       10. MIPA : Doktor
+
+      Apakah jawaban ini sudah sesuai permintaan ?
   utter_faq/ask_jumlah_jurusan_fakultas_ilmu_komputer:
-  - text: Jumlah jurusan Fakultas Ilmu Komputer Universitas Sriwijaya ada 7
+  - buttons:
+    - payload: jurusan yang ada di fakultas ilmu komputer
+      title: JURUSAN ILKOM
+    - payload: iya
+      title: IYA
+    - payload: tidak
+      title: TIDAK
+    text: Jumlah jurusan Fakultas Ilmu Komputer Universitas Sriwijaya ada 7. Apakah jawaban ini sudah sesuai permintaan ?
   utter_faq/ask_jurusan_fakultas_ilmu_komputer:
-  - text: |
+  - buttons:
+    - payload: iya
+      title: YA
+    - payload: tidak
+      title: TIDAK
+    text: |
       Berikut jurusan yang ada di Fakultas Ilmu Komputer Universitas Sriwijaya
 
       1.  Komputerisasi Akuntansi : Diploma Tiga
@@ -233,29 +437,71 @@ responses:
       5.  Teknik Informatika : Sarjana
       6.  Sistem Informasi : Sarjana
       7.  Teknik Informatika : Magister
+
+      Apakah jawaban ini sudah sesuai permintaan ?
   utter_faq/ask_jumlah_jurusan_fakultas_kesehatan_masyarakat:
-  - text: Jumlah jurusan Fakultas Kesehatan Masyarakat Universitas Sriwijaya ada 4
+  - buttons:
+    - payload: jurusan yang ada di fakultas kesehatan masyarakat
+      title: JURUSAN FKM
+    - payload: iya
+      title: IYA
+    - payload: tidak
+      title: TIDAK
+    text: Jumlah jurusan Fakultas Kesehatan Masyarakat Universitas Sriwijaya ada 4. Apakah jawaban ini sudah sesuai permintaan ?
   utter_faq/ask_jurusan_fakultas_kesehatan_masyarakat:
-  - text: |
+  - buttons:
+    - payload: iya
+      title: YA
+    - payload: tidak
+      title: TIDAK
+    text: |
       Berikut jurusan yang ada di Fakultas Kesehatan Masyarakat Universitas Sriwijaya
 
       1.  Ilmu Kesehatan Masyarakat: Sarjana
       2.  Ilmu Kesehatan Masyarakat: Magister
       3.  Gizi : Sarjana
       4.  Kesehatan Lingkungan : Sarjana
+
+      Apakah jawaban ini sudah sesuai permintaan ?
   utter_faq/ask_jumlah_jurusan_program_pascasarjana:
-  - text: Jumlah jurusan Program Pascasarjana Universitas Sriwijaya ada 3
+  - buttons:
+    - payload: jurusan yang ada di program pascasarjana
+      title: LIHAT JURUSAN
+    - payload: iya
+      title: IYA
+    - payload: tidak
+      title: TIDAK
+    text: Jumlah jurusan Program Pascasarjana Universitas Sriwijaya ada 3. Apakah jawaban ini sudah sesuai permintaan ?
   utter_faq/ask_jurusan_program_pascasarjana:
-  - text: |
+  - buttons:
+    - payload: iya
+      title: YA
+    - payload: tidak
+      title: TIDAK
+    text: |
       Berikut jurusan yang ada di Fakultas Kesehatan Masyarakat Universitas Sriwijaya
 
       1.  Pengelolaan Lingkungan : Magister
       2.  Kependudukan : Magister
       3.  Ilmu Lingkungan : Doktor
+
+      Apakah jawaban ini sudah sesuai permintaan ?
   utter_faq/ask_jumlah_jurusan_program_profesi:
-  - text: Jumlah jurusan Program Profesi Universitas Sriwijaya ada 5
+  - buttons:
+    - payload: jurusan yang ada di program profesi
+      title: LIHAT JURUSAN
+    - payload: iya
+      title: IYA
+    - payload: tidak
+      title: TIDAK
+    text: Jumlah jurusan Program Profesi Universitas Sriwijaya ada 5. Apakah jawaban ini sudah sesuai permintaan ?
   utter_faq/ask_jurusan_program_profesi:
-  - text: |
+  - buttons:
+    - payload: iya
+      title: YA
+    - payload: tidak
+      title: TIDAK
+    text: |
       Berikut jurusan yang ada di Program Profesi Universitas Sriwijaya
 
       1.  Akuntansi : Profesi
@@ -263,8 +509,15 @@ responses:
       3.  Profesi Ners : Profesi
       4.  Profesi Dokter Gigi : Profesi
       5.  Profesi Pendidikan Guru
+
+      Apakah jawaban ini sudah sesuai permintaan ?
   utter_faq/ask_repelita:
-  - text: |
+  - buttons:
+    - payload: iya
+      title: YA
+    - payload: tidak
+      title: TIDAK
+    text: |
       Startegi pembangunan Universitas Sriwijaya menuju 5 tahun kedepan sebagai berikut
 
       1.  Pemerataan dan perluasan akses pendidikan
@@ -272,8 +525,15 @@ responses:
       3.  Penguatan tata kelola, Akuntabilitas dan pencitraan publik
       4.  Penguatan sumber pendanaan
       5.  Globalisasi dan daya saing
+
+      Apakah jawaban ini sudah sesuai permintaan ?
   utter_faq/ask_pimpinan_unsri_dan_spi:
-  - text: |
+  - buttons:
+    - payload: iya
+      title: YA
+    - payload: tidak
+      title: TIDAK
+    text: |
       Berikut nama nama pimpinan dan satuan pengawas internal (SPI)
 
       1. Rektor            : Prof.Dr. Ir. H. Anis Saggaff, MSCE
@@ -281,28 +541,114 @@ responses:
       3. Wakil Rektor II   : Prof. Dr. Taufik Marwah, M. Si
       4. Wakil Rektor III  : Iwan Stia Budi, S.K.M., M.Kes
       5. Wakil Rektor IV   : Prof. Dr. Ir. M. Said, MSc
+
+      Apakah jawaban ini sudah sesuai permintaan ?
   utter_faq/ask_rektor:
-  - text: Rektor Universitas Sriwajaya adalah Prof.Dr. Ir. H. Anis Saggaff, MSCE
+  - buttons:
+    - payload: iya
+      title: YA
+    - payload: tidak
+      title: TIDAK
+    text: |
+      Rektor Universitas Sriwajaya adalah Prof.Dr. Ir. H. Anis Saggaff, MSCE
+
+      Apakah jawaban ini sudah sesuai permintaan ?
   utter_faq/ask_wakil_rektor_I:
-  - text: Wakil Rektor I Universitas Sriwajaya adalah Prof. Ir. Zainuddin Nawawi, Ph.D
+  - buttons:
+    - payload: iya
+      title: YA
+    - payload: tidak
+      title: TIDAK
+    text: |
+      Wakil Rektor I Universitas Sriwajaya adalah Prof. Ir. Zainuddin Nawawi, Ph.D
+
+      Apakah jawaban ini sudah sesuai permintaan ?
   utter_faq/ask_wakil_rektor_II:
-  - text: Wakil Rektor II Universitas Sriwajaya adalah Prof. Dr. Taufik Marwah, M. Si
+  - buttons:
+    - payload: iya
+      title: YA
+    - payload: tidak
+      title: TIDAK
+    text: |
+      Wakil Rektor II Universitas Sriwajaya adalah Prof. Dr. Taufik Marwah, M. Si
+
+      Apakah jawaban ini sudah sesuai permintaan ?
   utter_faq/ask_wakil_rektor_III:
-  - text: Wakil Rektor III Universitas Sriwajaya adalah Iwan Stia Budi, S.K.M., M.Kes
+  - buttons:
+    - payload: iya
+      title: YA
+    - payload: tidak
+      title: TIDAK
+    text: |
+      Wakil Rektor III Universitas Sriwajaya adalah Iwan Stia Budi, S.K.M., M.Kes
+
+      Apakah jawaban ini sudah sesuai permintaan ?
   utter_faq/ask_wakil_rektor_IV:
-  - text: Wakil Rektor IV Universitas Sriwajaya adalah Prof. Dr. Ir. M. Said, MSc
+  - buttons:
+    - payload: iya
+      title: YA
+    - payload: tidak
+      title: TIDAK
+    text: |
+      Wakil Rektor IV Universitas Sriwajaya adalah Prof. Dr. Ir. M. Said, MSc
+
+      Apakah jawaban ini sudah sesuai permintaan ?
   utter_faq/ask_ketua_lp2m:
-  - text: Ketua lembaga penelitian dan pengabdian kepada masyarakat (LP2M) adalah Dr. Samsyuriadi, M.Si
+  - buttons:
+    - payload: iya
+      title: YA
+    - payload: tidak
+      title: TIDAK
+    text: |
+      Ketua lembaga penelitian dan pengabdian kepada masyarakat (LP2M) adalah Dr. Samsyuriadi, M.Si
+
+      Apakah jawaban ini sudah sesuai permintaan ?
   utter_faq/ask_sekretaris_lp2m:
-  - text: Sekretaris Lembaga penelitian dan pengabdian kepada masyarakat (LP2M) adalah Prof. Dr. Mulyadi Eko Purnomo, M.Pd
+  - buttons:
+    - payload: iya
+      title: YA
+    - payload: tidak
+      title: TIDAK
+    text: |
+      Sekretaris Lembaga penelitian dan pengabdian kepada masyarakat (LP2M) adalah Prof. Dr. Mulyadi Eko Purnomo, M.Pd
+
+      Apakah jawaban ini sudah sesuai permintaan ?
   utter_faq/ask_ketua_lp3mp:
-  - text: Ketua lembaga pengembangan pembelajaran dan penjaminan mutu pendidikan (LP3MP) adalah Dr. Kiki Yuliati, M.Sc
+  - buttons:
+    - payload: iya
+      title: YA
+    - payload: tidak
+      title: TIDAK
+    text: |
+      Ketua lembaga pengembangan pembelajaran dan penjaminan mutu pendidikan (LP3MP) adalah Dr. Kiki Yuliati, M.Sc
+
+      Apakah jawaban ini sudah sesuai permintaan ?
   utter_faq/ask_sekretaris_lp3mp:
-  - text: Sekretaris lembaga pengembangan pembelajaran dan penjaminan mutu pendidikan (LP3MP) adalah Dr. Ardian Septawan, M.Si
+  - buttons:
+    - payload: iya
+      title: YA
+    - payload: tidak
+      title: TIDAK
+    text: |
+      Sekretaris lembaga pengembangan pembelajaran dan penjaminan mutu pendidikan (LP3MP) adalah Dr. Ardian Septawan, M.Si
+
+      Apakah jawaban ini sudah sesuai permintaan ?
   utter_faq/ask_jumlah_lembaga_utama_universitas:
-  - text: Jumlah lembaga utama di Universitas Sriwijaya ada 12 lembaga
+  - buttons:
+    - payload: lembaga unsri
+      title: LIHAT LEMBAGA
+    - payload: iya
+      title: YA
+    - payload: tidak
+      title: TIDAK
+    text: Jumlah lembaga utama di Universitas Sriwijaya ada 12 lembaga. Apakah jawaban ini sudah sesuai permintaan ?
   utter_faq/ask_lembaga_utama_universitas:
-  - text: |
+  - buttons:
+    - payload: iya
+      title: YA
+    - payload: tidak
+      title: TIDAK
+    text: |
       Berikut lembaga - lembaga yang ada di Universitas Sriwijaya
 
       1.  Biro Akademik dan Kemahasiswaan (BAK)
@@ -317,15 +663,44 @@ responses:
       10. UPT Laboratorium Dasar Bersama
       11. UPT Kerjasama Layanan Internasional
       12. Pusat Pengembangan Karakter dan Karir (CDC)
+
+      Apakah jawaban ini sudah sesuai permintaan ?
   utter_faq/ask_jumlah_kepala_lembaga_utama_universitas:
-  - text: Jumlah kepala lembaga utama di Universitas Sriwijaya ada 12 orang
+  - buttons:
+    - payload: pimpinan kepala biro
+      title: KEPALA BIRO
+    - payload: pimpinan kepala upt
+      title: KEPALA UPT
+    - payload: pimpinan kepala pusat
+      title: KEPALA PUSAT
+    - payload: iya
+      title: YA
+    - payload: tidak
+      title: TIDAK
+    text: Jumlah kepala lembaga utama di Universitas Sriwijaya ada 12 orang. Apakah jawaban ini sudah sesuai permintaan ?
   utter_faq/ask_pimpiman_kepala_biro:
-  - text: |
+  - buttons:
+    - payload: iya
+      title: YA
+    - payload: tidak
+      title: TIDAK
+    text: |
+      Berikut nama kepala lembaga biro yang ada di Universitas Sriwijaya:
+
       1. Kepala Biro Akademik dan Kemahasiswaan: Drs. Djunaidi Sjarnoebi, MSLS
       2. Kepala Biro Umum dan Keuangan: Anita Rachmawati, SE.
       3. Kepala Biro Perencanaan dan Hubungan Masyarakat: Deddy Supriadi, ST., MSi
+
+      Apakah jawaban ini sudah sesuai permintaan ?
   utter_faq/ask_kepala_upt:
-  - text: |
+  - buttons:
+    - payload: iya
+      title: YA
+    - payload: tidak
+      title: TIDAK
+    text: |
+      Berikut nama kepala lembaga UPT yang ada di Universitas Sriwijaya:
+
       1. Kepala UPT Perpustakaan: Dip-Ing. Ir. Amrifan S Mohruni, Ph.D.
       2. Kepala UPT TIK: Dr. H. Muhammad Irfan Djambak, ST., M. Eng
       3. Kepala UPT Penerbit dan Percetakan: Prof. Dr. Alfitri, M.Si.
@@ -334,13 +709,34 @@ responses:
       6. Kepala UPT Klinik Kesehatan: Dr. Subandrate, M.Biomed
       7. Kepala UPT Laboratorium Dasar Bersama: Prof. Dr. Muharni, M.Si.
       8. Kepala UPT Kerjasama Layanan Internasional: Dr. Reza Firsandaya Malik, MT (obsolete)
+
+      Apakah jawaban ini sudah selesai ?
   utter_faq/ask_kepala_pusat:
-  - text: |
+  - buttons:
+    - payload: iya
+      title: YA
+    - payload: tidak
+      title: TIDAK
+    text: |
+      Berikut nama kepala lembaga pusat yang ada di Universitas Sriwijaya:
+
       1. Kepala Pusat CDC: Deris Setiawan, Ph.D.
+
+      Apakah jawaban ini sudah sesuai permintaan ?
   utter_faq/ask_jumlah_pimpinan_fakultas:
-  - text: Jumlah pimpinan fakultas di Universitas Sriwijaya ada 11 orang
+  - buttons:
+    - payload: iya
+      title: YA
+    - payload: tidak
+      title: TIDAK
+    text: Jumlah pimpinan fakultas di Universitas Sriwijaya ada 11 orang. Apakah jawaban ini sudah sesuai permintaan ?
   utter_faq/ask_pimpinan_fakultas:
-  - text: |
+  - buttons:
+    - payload: iya
+      title: YA
+    - payload: tidak
+      title: TIDAK
+    text: |
       Berikut adalah nama setiap pimpinan fakultas yang ada di Universitas Sriwijaya
 
       1.  Fakultas Ekonomi: Prof. Dr. Muhamad Adam
@@ -354,10 +750,36 @@ responses:
       9.  Fakultas Ilmu Komputer: Jaidan Jauhari, M.T.
       10. Fakultas Kesehatan Masyarakat: Dr. Misnaniarti, M. Kes.
       11. Direktur Pascasarjana: Prof. Dr. Ir. Amin Rejo, MP.
+
+      Apakah jawaban ini sudah sesuai permintaan ?
   utter_faq/ask_jumlah_jalur_penerimaan_calon_mahasiswa:
-  - text: Jumlah jalur penerimaan calon mahasiswa di Universitas Sriwijaya ada 5 jalur
+  - buttons:
+    - payload: jalu penerimaan mahasiswa unsri
+      title: LIHAT JALUR
+    - payload: iya
+      title: IYA
+    - payload: tidak
+      title: TIDAK
+    text: Jumlah jalur penerimaan calon mahasiswa di Universitas Sriwijaya ada 5 jalur. Apakah jawaban ini sudah sesuai permintaan ?
   utter_faq/ask_jalur_penerimaan_calon_mahasiswa:
-  - text: |
+  - buttons:
+    - payload: jalur undangan unsri
+      title: SNMPTN
+    - payload: jalur tes unsri
+      title: SBMPTN
+    - payload: jalur mandiri unsri
+      title: USMB
+    - payload: Cara masuk unsri jalur usm diploma
+      title: DIPLOMA
+    - payload: Cara masuk program pascasarjana unsri
+      title: PASCASARJANA
+    - payload: Cara masuk program spesialis unsri
+      title: SPESIALIS
+    - payload: Cara masuk program profesi unsri
+      title: PROFESI
+    - payload: Cara mendapatkan Beasiswa KIP Kuliah Universitas Sriwijaya
+      title: KIP
+    text: |-
       Penerimaan calon mahasiswa Universitas Sriwajaya dapat dilakukan dengan cara berikut
 
       1.  Seleksi Nasional Masuk Perguruan Tinggi Negeri (SNMPTN)
@@ -366,51 +788,105 @@ responses:
       4.  Ujian Saringan Masuk Program Diploma, Pascasarjana, Spesialis, dan Profesi
       5.  Beasiswa KIP Kuliah (dulu program Pendidikan Miskin Indonesia-Bidikmisi)
   utter_faq/ask_seleksi_nasional:
-  - text: |
+  - buttons:
+    - payload: iya
+      title: YA
+    - payload: tidak
+      title: TIDAK
+    text: |
       Penjelasan mengenai SNMPTN bisa dilihat sebagai berikut
 
       1.  Dilaksanakan secara online
       2.  Informasi tata cara mengikuti SNMPTN bisa dilihat di www.snmptn.or.id
+
+      Apakah jawaban ini sudah sesuai permintaan ?
   utter_faq/ask_seleksi_bersama:
-  - text: |
+  - buttons:
+    - payload: iya
+      title: YA
+    - payload: tidak
+      title: TIDAK
+    text: |
       Penjelasan mengenai SBMPTN bisa dilihat sebagai berikut
 
       1.  Diperuntukkan bagi calon mahasiswa yang berminat mengikuti program studi Program Sarjana (S1) di Universitas Sriwijaya
       2.  Pendaftaran dilakukan secara online
       3.  Persyaratan dan tata cara pendaftaran bisa dilihat di http://pendaftaran.sbmptn.or.id
+
+      Apakah jawaban ini sudah sesuai permintaan ?
   utter_faq/ask_jalur_mandiri:
-  - text: |
+  - buttons:
+    - payload: iya
+      title: IYA
+    - payload: tidak
+      title: TIDAK
+    text: |-
       Penjelasan mengenai USMB bisa dilihat sebagai berikut
 
       1.  Dilaksanakan oleh kepanitiaan yang dibentuk dengan Surat Keputusan Rektor Universitas Sriwijaya
       2.  Persyaratan peserta, proses pendaftaran, dan semua informasi terkait USMB diumumkan di www.usm.unsri.ac.id
       3.  Dilakukan secara serentak di Kampus Universitas Sriwijaya Bukit Besar dan lokasi lain tergantung kebutuhan dan jumlah peserta
+
+      Apakah jawaban ini sudah sesuai permintaan ?
   utter_faq/ask_ujian_saringan_masuk_diploma:
-  - text: |
+  - buttons:
+    - payload: iya
+      title: YA
+    - payload: tidak
+      title: TIDAK
+    text: |
       Penjelasan mengenai USM Diploma sebagai berikut
 
       1. Untuk program Diploma, penerimaan calon mahasiswa dilakukan setiap awal tahun akademik melalui jalur seleksi USM
       2. Waktu dan tata cara pelaksanaan dapat dilihat di laman www.usm.unsri.ac.id
+
+      Apakah jawaban ini sudah sesuai permintaan ?
   utter_faq/ask_ujian_saringan_masuk_pascasarjana:
-  - text: |
+  - buttons:
+    - payload: iya
+      title: YA
+    - payload: tidak
+      title: TIDAK
+    text: |
       Penjelasan mengenai USM pascasarjana sebagai berikut
 
       1. Untuk program Pascasarjana, penerimaan calon mahasiswa dilakukan pada semester ganjil dan genap melalui jalur seleksi USM
       2. Waktu dan tata cara pelaksanaan dapat dilihat di laman www.usm.unsri.ac.id
+
+      Apakah jawaban ini sudah sesuai permintaan ?
   utter_faq/ask_ujian_saringan_masuk_spesialis:
-  - text: |
+  - buttons:
+    - payload: iya
+      title: YA
+    - payload: tidak
+      title: TIDAK
+    text: |
       Penjelasan mengenai USM spesialis sebagai berikut
 
       1. Untuk program Spesialis, penerimaan calon mahasiswa dilakukan pada semester ganjil dan genap melalui jalur seleksi USM
       2. Waktu dan tata cara pelaksanaan dapat dilihat di laman www.usm.unsri.ac.id
+
+      Apakah jawaban ini sudah sesuai permintaan ?
   utter_faq/ask_ujian_saringan_masuk_profesi:
-  - text: |
+  - buttons:
+    - payload: iya
+      title: YA
+    - payload: tidak
+      title: TIDAK
+    text: |
       Penjelasan mengenai USM profesi sebagai berikut
 
       1. Untuk program Profesi, penerimaan calon mahasiswa dilakukan pada semester ganjil dan genap melalui jalur seleksi USM
       2. Waktu dan tata cara pelaksanaan dapat dilihat di laman www.usm.unsri.ac.id
+
+      Apakah jawbaan ini sudah sesuai ?
   utter_faq/ask_beasiswa:
-  - text: |
+  - buttons:
+    - payload: iya
+      title: IYA
+    - payload: tidak
+      title: TIDAK
+    text: |-
       Calon mahasiswa beasiswa KIP Kuliah harus mengikuti mekanisme berikut:
 
       1. Mempelajari dan memahami prosedur pendaftaran program KIP Kuliah di https://kip-kuliah.kemdikbud.go.id
@@ -421,8 +897,15 @@ responses:
       6. Peserta menyelesaikan proses pendaftaran KIP Kuliah dan memilih proses seleksi yang diikuti (SNMPTN/SBMPTN/Mandiri)
       7. Peserta menyelesaikan proses pendaftaran di portal atau sistem informasi seleksi nasional masuk perguruan tinggi sesuai jalur yang dipilih
       8. Calon penerima KIP Kuliah yang dinyatakan diterima di Perguruan Tinggi dapat dilakukan verifikasi lebih lanjut oleh Universitas Sriwijaya sebelum diusulkan sebagai calon mahasiswa penerima KIP Kuliah
+
+      Apakah jawaban ini sudah sesuai permintaan ?
   utter_faq/ask_pendaftaran_ulang_maba:
-  - text: |
+  - buttons:
+    - payload: iya
+      title: YA
+    - payload: tidak
+      title: TIDAK
+    text: |
       Berikut prosedur pendaftaran ulang mahasiswa baru Universitas Sriwijaya
 
       1. Seluruh calon mahasiswa baru Universitas Sriwijaya, baik yang diterima melalui SNMPTN, SBMPTN, dan USM wajib melakukan registrasi secara daring dan menyerahkan berkas-berkas yang dipersyaratkan ke Biro Akademik dan Kemahasiswaan Universitas Sriwijaya pada tempat dan waktu yang ditetapkan
@@ -431,8 +914,15 @@ responses:
       4. Persyaratan dan prosedur pendaftaran ulang dituangkan dalam pengumuman Rektor Universitas Sriwijaya yang dapat diunduh melalui laman www.unsri.ac.id
       5. Mahasiswa baru Universitas Sriwijaya diterima secara resmi oleh Rektor dalam suatu upacara resmi Penerimaan Mahasiswa Baru Universitas Sriwijaya
       6. Mahasiswa baru diminta mengikuti kegiatan Pengenalan Kehidupan Kampus (PK2) untuk mendapatkan informasi mengenai pendidikan di Universitas Sriwijaya, pelaksanaan kegiatan akademik, nama pembimbing akademik, dan pengisian Kartu Studi Mahasiswa (KSM) semester pertama
+
+      Apakah jawaban ini sudah sesuai permintaan ?
   utter_faq/ask_prosedur_mahasiswa_asing_di_unsri:
-  - text: |
+  - buttons:
+    - payload: iya
+      title: YA
+    - payload: tidak
+      title: TIDAK
+    text: |
       Berikut prosedur calon mahasiswa asing di lingkungan Universitas Sriwijaya
 
       1. Calon mahasiswa asing yang ingin mendaftar ke Universitas Sriwijaya menghubungi Kantor Kerjasama Layanan Internasional (KLI) untuk mendapatkan informasi persyaratan bagi calon mahasiswa asing untuk mendaftar di Universitas Sriwijaya.
@@ -441,11 +931,27 @@ responses:
       4. Mahasiswa asing yang akan mengurus keperluan administrasi untuk keberadaannya di Indonesia seperti Visa Tinggal, Paspor, Kartu Izin Tinggal Terbatas, dan hal lain yang berhubungan dengan kependudukannya di Indonesia menghubungi KLI untuk kemudian dibuatkan Surat Pengantar Rektor ke instansi yang berwenang
       5. Semua surat yang dikeluarkan dari Universitas Sriwijaya ke instansi lain untuk keperluan mahasiswa asing ditandatangani oleh Rektor atau Pejabat yang diberi kewenangan  minimal setara dengan Eselon 2 (dua) sesuai SK Rektor Universitas Sriwijaya No.261 /UN9/DT.Kep/2016
       6. Penerimaan mahasiswa asing ke Universitas Sriwijaya diatur tersendiri dalam Peraturan Rektor
+
+      Apakah jawaban ini sudah sesuai permintaan ?
   utter_faq/ask_nim:
-  - text: |
+  - buttons:
+    - payload: pengkodean nim
+      title: PENGKODEAN NIM
+    - payload: iya
+      title: YA
+    - payload: tidak
+      title: TIDAK
+    text: |
       NIM ditetapkan berdasarkan pengkodean yang tertuang dalam Surat Keputusan Rektor Universitas Sriwijaya Nomor:122/UN9/DT.Kep/2013 tanggal 27 Mei 2013
+
+      Apakah jawaban ini sudah sesuai permintaan ?
   utter_faq/ask_kode_nim:
-  - text: |
+  - buttons:
+    - payload: iya
+      title: YA
+    - payload: tidak
+      title: TIDAK
+    text: |
       Tata cara pengkodean NIM
       contoh : 09021181924019
 
@@ -459,61 +965,163 @@ responses:
       8. Nomor Urut Pendaftaran (3 digit)
 
       NIM memiliki total 14 digit angka
+
+      Apakah jawaban ini sudah sesuai permintaan ?
   utter_faq/ask_sistem_penyelenggaraan_pendidikan:
-  - text: |
+  - buttons:
+    - payload: iya
+      title: YA
+    - payload: tidak
+      title: TIDAK
+    text: |
       Sistem penyelenggaraan pendidikan di unsri terdiri dari
       1. Sistem Kredit Semester (SKS)
       2. Satuan Kredit Semester (sks)
       3. Satu Satuan Kredit Semester (1 sks)
+
+      Apakah jawaban ini sudah sesuai permintaan ?
   utter_faq/ask_sistem_kredit_semester_SKS:
-  - text: Suatu sistem penyelenggaraan pendidikan dengan menggunakan satuan kredit semester (sks)
+  - buttons:
+    - payload: iya
+      title: YA
+    - payload: tidak
+      title: TIDAK
+    text: Suatu sistem penyelenggaraan pendidikan dengan menggunakan satuan kredit semester (sks). Apakah jawaban ini sudah sesuai permintaan ?
   utter_faq/ask_satuan_kredit_semester_sks:
-  - text: Takaran waktu kegiatan belajar yang dibebankan pada mahasiswa per minggu per semester dalam proses pembelajaran melalui berbagai bentuk pembelajaran atau besarnya pengakuan atas keberhasilan usaha mahasiswa dalam mengikuti kegiatan kurikuler di suatu program studi
+  - buttons:
+    - payload: iya
+      title: YA
+    - payload: tidak
+      title: TIDAK
+    text: Takaran waktu kegiatan belajar yang dibebankan pada mahasiswa per minggu per semester dalam proses pembelajaran melalui berbagai bentuk pembelajaran atau besarnya pengakuan atas keberhasilan usaha mahasiswa dalam mengikuti kegiatan kurikuler di suatu program studi. Apakah jawaban ini sudah sesuai permintaan ?
   utter_faq/ask_perhitungan_1_sks_per_minggu:
-  - text: |
+  - buttons:
+    - payload: iya
+      title: YA
+    - payload: tidak
+      title: TIDAK
+    text: |
       Perhitungan 1 SKS per Minggu
 
       1. Pembelajaran kuliah, responsi dan tutorial, adalah 170 menit.
       2. Pembelajaran seminar atau bentuk lain, adalah 170 menit.
       3. Pembelajaran praktikum, praktik studio, praktik bengkel dan/atau bentuk lain yang setara, adalah 170 (seratus tujuh puluh) menit.
       4. Perhitungan satu satuan kredit semester (1 sks) untuk praktek lapangan, penelitian, pengabdian kepada masyarakat atau proses pembelajaran lain sejenis adalah 170 (seratus tujuh puluh) menit per minggu per semester.
+
+      Apakah jawaban ini sudah sesuai permintaan ?
   utter_faq/ask_perhitungan_1_sks_pembelajaran_kuliah_responsi_tutorial:
-  - text: |
+  - buttons:
+    - payload: iya
+      title: YA
+    - payload: tidak
+      title: TIDAK
+    text: |
       Perhitungan 1 SKS pembelajaran kuliah responsi
 
       1. Kegiatan belajar selama 50 (lima puluh) menit.
       2. Penugasan terstruktur selama 60 (enam puluh) menit.
       3. Belajar mandiri selama 60 (enam puluh) menit.
+
+      Apakah jawaban ini sudah sesuai permintaan ?
   utter_faq/ask_perhitungan_1_sks_pembelajaran_seminar_bentuk_lain:
-  - text: |
+  - buttons:
+    - payload: iya
+      title: YA
+    - payload: tidak
+      title: TIDAK
+    text: |
       Perhitungan 1 SKS pembelajaran dalam bentuk seminar atau bentuk lain
 
       1. Kegiatan belajar selama 100 (seratus) menit;
       2. Belajar mandiri selama 70 (tujuh puluh) menit.
+
+      Apakah jawaban ini sudah sesuai permintaan ?
   utter_faq/ask_pembelajaran_elearning:
-  - text: |
+  - buttons:
+    - payload: iya
+      title: YA
+    - payload: tidak
+      title: TIDAK
+    text: |
       Pembelajaran Elearning
 
       1. Waktu kegiatan belajar mahasiswa adalah 170 menit/sks/minggu.
       2. Diwujudkan dalam bentuk pertemuan tatap maya sinkron dan pembelajaran asinkron.
       3. Pembelajaran asinkron dapat disusun dalam bentuk pembelajaran mandiri dan atau pembelajaran berkelompok.
       4. Dosen pengampu menetapkan alokasi waktu belajar untuk setiap bentuk kegiatan belajar yang diperlukan sesuai strategi pembelajaran.
+
+      Apakah jawaban ini sudah sesuai permintaan ?
   utter_faq/ask_satu_satuan_kredit:
-  - text: Satu satuan kredit semester mengacu kepada Peraturan Menteri Pendidikan dan Kebudayaan Nomor 3 Tahun 2020 tentang Standar Nasional Pendidikan Tinggi dan Peraturan Rektor Universitas Sriwijaya Nomor 5 Tahun 2020 tentang Standar Pendidikan Universitas Sriwijaya.
+  - buttons:
+    - payload: iya
+      title: YA
+    - payload: tidak
+      title: TIDAK
+    text: Satu satuan kredit semester mengacu kepada Peraturan Menteri Pendidikan dan Kebudayaan Nomor 3 Tahun 2020 tentang Standar Nasional Pendidikan Tinggi dan Peraturan Rektor Universitas Sriwijaya Nomor 5 Tahun 2020 tentang Standar Pendidikan Universitas Sriwijaya. Apakah jawaban ini sudah sesuai permintaan ?
   utter_faq/ask_perhitungan_satu_satuan_kredit:
-  - text: |
+  - buttons:
+    - payload: iya
+      title: YA
+    - payload: tidak
+      title: TIDAK
+    text: |
       Perhitungan 1 satuan kredit
 
       1. 50 menit kegiatan belajar terjadwal dengan dosen pengampu.
       2. 60 menit kegiatan akademik terstruktur.
       3. 60 menit kegiatan akademik mandiri.
+
+      Apakah jawaban ini sudah sesuai permintaan ?
   utter_respon_failed:
-  - text: Maaf permintaan anda belum dapat diproses
+  - buttons:
+    - payload: tanya
+      title: YA
+    - payload: tidak
+      title: TIDAK
+    text: Maaf permintaan anda belum dapat diproses. Ada pertanyaan lain ?
   utter_minus_param:
-  - text: Maaf permintaan anda kurang lengkap
+  - text: Maaf permintaan anda kurang lengkap. Ulangi pertanyaan dengan memberikan perintah yang jelas
+  utter_ask_nama:
+  - text: Terima kasih sudah memakai Unsri Bot. Siapa Nama Kamu ?
+  utter_ask_pendapat:
+  - text: Pendapat kamu tentang Unsri Bot ?
+  utter_terima_kasih:
+  - text: |
+      Terima kasih {nama}
 actions:
 - action_jumlah_jurusan_fakultas
 - action_jurusan_fakultas
 - action_wakil_rektor
-forms: {}
+- action_respon_jawaban
+- action_nama_user
+- action_pendapat_user
+forms:
+  nama_form:
+    ignored_intents:
+    - chitchat
+    - faq
+    - out_of_intent
+    - minus_param
+    - ask_wakil_rektor
+    - ask_jurusan_fakultas
+    - ask_jumlah_jurusan_fakultas
+    - respon_jawaban
+    required_slots:
+      nama:
+        - type: from_entity
+          entity: nama
+  pendapat_form:
+    ignored_intents:
+    - chitchat
+    - faq
+    - out_of_intent
+    - minus_param
+    - ask_wakil_rektor
+    - ask_jurusan_fakultas
+    - ask_jumlah_jurusan_fakultas
+    - respon_jawaban
+    required_slots:
+      pendapat:
+        - type: from_entity
+          entity: pendapat
 e2e_actions: []
