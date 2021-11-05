@@ -2,7 +2,7 @@ from typing import Any, Text, Dict, List
 from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
 from rasa_sdk.events import SlotSet
-
+import sqlite3
 
 class JumlahJurusanFakultas(Action):
 
@@ -139,16 +139,26 @@ class ResponJawaban(Action):
 
 class GetNamaUser(Action):
 
+	var_nama = ''
+
 	def name(self) -> Text:
 		return "action_nama_user"
 
 	def run(self, dispatcher: CollectingDispatcher,tracker: Tracker,domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 
 		nama = tracker.latest_message['text']
+		no = InsertData.HitungBaris(self)
+		if nama is not None:
+			nama_db = nama + '_' + str(no)
+			print(nama_db)
+			GetPendapatUser.var_nama = nama_db
+			InsertData.InsertFeedbackNama(self,nama=nama_db)
 		dispatcher.utter_message(response='utter_ask_pendapat')
 		return[SlotSet("nama",nama)]
 
 class GetPendapatUser(Action):
+
+	var_nama = ''
 
 	def name(self) -> Text:
 		return "action_pendapat_user"
@@ -156,5 +166,37 @@ class GetPendapatUser(Action):
 	def run(self, dispatcher: CollectingDispatcher,tracker: Tracker,domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 
 		pendapat = tracker.latest_message['text']
+		InsertData.InsertFeedbackPendapat(self,pendapat=pendapat,nama=GetPendapatUser.var_nama)
 		dispatcher.utter_message(response='utter_terima_kasih')
 		return[SlotSet("pendapat",pendapat)]
+
+class InsertData():
+	def InsertFeedbackNama(self,nama):
+		conn = sqlite3.connect('db_chatbot.db')
+		c = conn.cursor()
+
+		# perintah sql untuk insert data
+		c.execute("INSERT INTO feedback (nama) VALUES('"+nama+"')")
+		conn.commit()
+
+		c.close()
+		conn.close()
+
+	def InsertFeedbackPendapat(self,pendapat,nama):
+		conn = sqlite3.connect('db_chatbot.db')
+		c = conn.cursor()
+
+		# perintah sql untuk insert data
+		c.execute("UPDATE feedback set pendapat ='" + pendapat + "' WHERE nama = '"+nama+"'")
+		conn.commit()
+
+		c.close()
+		conn.close()
+
+	def HitungBaris(self):
+		conn = sqlite3.connect('db_chatbot.db')
+		cur = conn.cursor()
+		cur.execute('SELECT COUNT(*) from feedback')
+		cur_result = cur.fetchone()
+		rows = cur_result[0]
+		return rows
