@@ -31,3 +31,40 @@ rules:
     steps:
     - intent: ask_wakil_rektor
     - action: action_wakil_rektor
+
+  - rule: respon jawaban
+    steps:
+    - intent: respon_jawaban
+    - action: action_respon_jawaban
+
+  - rule: activate nama user
+    steps:
+    - intent: nama_user
+    - action: nama_form
+    - active_loop: nama_form
+
+  - rule: submit nama user
+    condition:
+    - active_loop: nama_form
+    steps:
+    - action: nama_form
+    - active_loop: null
+    - slot_was_set:
+        - requested_slot: null
+    - action: action_nama_user
+
+  - rule: activate pendapat user
+    steps:
+    - intent: pendapat_user
+    - action: pendapat_form
+    - active_loop: pendapat_form
+
+  - rule: submit pendapat user
+    condition:
+    - active_loop: pendapat_form
+    steps:
+    - action: pendapat_form
+    - active_loop: null
+    - slot_was_set:
+        - requested_slot: null
+    - action: action_pendapat_user

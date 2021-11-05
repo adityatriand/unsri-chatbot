@@ -20,11 +20,12 @@ pipeline:
   retrieval_intent: chitchat
 - name: FallbackClassifier
   threshold: 0.7
-- name: RegexEntityExtractor
-  use_lookup_tables: True
+#- name: RegexEntityExtractor
+#  use_lookup_tables: True
 timezone: etc/localtime
 policies:
 - name: RulePolicy
   core_fallback_threshold: 0.4
   core_fallback_action_name: action_default_fallback
   enable_fallback_prediction: true
+#- name: TEDPolicy
