@@ -1091,9 +1091,9 @@ responses:
   utter_minus_param:
   - text: Maaf permintaan anda kurang lengkap. Ulangi pertanyaan dengan memberikan perintah yang jelas
   utter_ask_nama:
-  - text: Terima kasih sudah memakai Unsri Bot. Siapa Nama Kamu ?
+  - text: Terima kasih sudah memakai Unsri Bot. Siapa Nama Kamu ? Gunakan format berikut ":" nama saya ....
   utter_ask_pendapat:
-  - text: Pendapat kamu tentang Unsri Bot ?
+  - text: Pendapat kamu tentang Unsri Bot ? Gunakan format berikut ":" menurut saya ....
   utter_terima_kasih:
   - text: |
       Terima kasih {nama}
@@ -1119,6 +1119,7 @@ forms:
       nama:
       - entity: nama
         type: from_entity
+        intent: nama_user
   pendapat_form:
     ignored_intents:
     - chitchat
@@ -1133,4 +1134,5 @@ forms:
       pendapat:
       - entity: pendapat
         type: from_entity
+        intent: pendapat_user
 e2e_actions: []

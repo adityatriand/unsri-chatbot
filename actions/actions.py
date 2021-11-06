@@ -145,12 +145,14 @@ class GetNamaUser(Action):
 		return "action_nama_user"
 
 	def run(self, dispatcher: CollectingDispatcher,tracker: Tracker,domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-
-		nama = tracker.latest_message['text']
+		list_nama = tracker.latest_message['text'].split()
+		nama = ''
+		for x in list_nama:
+			if x != 'saya' and x != 'nama':
+				nama = nama + x + ' '
 		no = InsertData.HitungBaris(self)
 		if nama is not None:
-			nama_db = nama + '_' + str(no)
-			print(nama_db)
+			nama_db = nama + str(no)
 			GetPendapatUser.var_nama = nama_db
 			InsertData.InsertFeedbackNama(self,nama=nama_db)
 		dispatcher.utter_message(response='utter_ask_pendapat')

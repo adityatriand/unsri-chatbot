@@ -1,15 +1,14 @@
 version: "2.0"
 
 #stories:
-#  - story: feedback process
+#  - story: proses ambil nama
 #    steps:
-#    - intent: respon_jawaban
-#    - action: action_respon_jawaban
 #    - intent: nama_user
 #    - action: nama_form
 #    - active_loop: nama_form
-#    - action: action_nama_user
+#
+#  - story: proses ambil pendapat
+#    steps:
 #    - intent: pendapat_user
 #    - action: pendapat_form
 #    - active_loop: pendapat_form
-#    - action: action_pendapat_user
