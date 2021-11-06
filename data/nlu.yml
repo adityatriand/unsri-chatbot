@@ -464,15 +464,15 @@ nlu:
 
 - intent: nama_user
   examples: |
-    - [adit](nama)
-    - [irsyad]{"entity":"nama"}
-    - [diaz]{"entity":"nama"}
-    - [nabila]{"entity":"nama"}
-    - [pristi]{"entity":"nama"}
-    - [pahriza]{"entity":"nama"}
-    - [aura]{"entity":"nama"}
+    - adit
+    - irsyad
+    - diaz
+    - nabila
+    - pristi
+    - pahriza
+    - aura
 
 - intent: pendapat_user
   examples: |
-    - [Keren botnya semoga bisa lebih baik lagi](pendapat)
-    - [Bermanfaat dan keren sekali]{"entity":"pendapat"}
+    - Keren botnya semoga bisa lebih baik lagi
+    - Bermanfaat dan keren sekali

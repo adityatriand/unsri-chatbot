@@ -29,8 +29,8 @@ entities:
 - nama_fakultas
 - posisi_wakil
 - respon
-- nama
-- pendapat
+#- nama
+#- pendapat
 slots: 
   nama:
     type: text
@@ -1108,8 +1108,7 @@ forms:
     - respon_jawaban
     required_slots:
       nama:
-        - type: from_entity
-          entity: nama
+        - type: from_text
   pendapat_form:
     ignored_intents:
     - chitchat
@@ -1122,6 +1121,5 @@ forms:
     - respon_jawaban
     required_slots:
       pendapat:
-        - type: from_entity
-          entity: pendapat
+        - type: from_text
 e2e_actions: []

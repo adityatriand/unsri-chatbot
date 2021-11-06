@@ -150,7 +150,6 @@ class GetNamaUser(Action):
 		no = InsertData.HitungBaris(self)
 		if nama is not None:
 			nama_db = nama + '_' + str(no)
-			print(nama_db)
 			GetPendapatUser.var_nama = nama_db
 			InsertData.InsertFeedbackNama(self,nama=nama_db)
 		dispatcher.utter_message(response='utter_ask_pendapat')
