@@ -31,13 +31,22 @@ entities:
 - respon
 - nama
 - pendapat
-slots: 
+slots:
   nama:
-    type: text
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    auto_fill: true
     influence_conversation: true
   pendapat:
-    type: text
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    auto_fill: true
     influence_conversation: true
+  requested_slot:
+    type: rasa.shared.core.slots.UnfeaturizedSlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: false
 responses:
   utter_chitchat/greet:
   - text: Hallo, ada yang bisa saya bantu ?
@@ -1108,8 +1117,8 @@ forms:
     - respon_jawaban
     required_slots:
       nama:
-        - type: from_entity
-          entity: nama
+      - entity: nama
+        type: from_entity
   pendapat_form:
     ignored_intents:
     - chitchat
@@ -1122,6 +1131,6 @@ forms:
     - respon_jawaban
     required_slots:
       pendapat:
-        - type: from_entity
-          entity: pendapat
+      - entity: pendapat
+        type: from_entity
 e2e_actions: []
