@@ -82,6 +82,7 @@ nlu:
     - siapa saja pimpinan di universitas sriwijaya
     - sebutkan pengawas internal unsri
     - pimpinan serta satuan pengawas internal di universitas sriwijaya
+    - pimpinan yang ada di unsri
 - intent: faq/ask_rektor
   examples: |
     - nama rektor universitas sriwijaya
@@ -165,6 +166,7 @@ nlu:
     - jalur penerimaan camaba unsri
     - seleksi penerimaan calon mahasiswa
     - seleksi masuk unsri
+    - bagaimana cara masuk unsri ?
 - intent: faq/ask_seleksi_nasional
   examples: |
     - bagaimana cara mengikuti seleksi nasional unsri?
@@ -394,6 +396,35 @@ nlu:
     - jurusan fakultas
     - wakil rektor
     - ujian saringan masuk
+- intent: respon_jawaban
+  examples: |
+    - [iya](respon)
+    - [tidak](respon)
+    - [tanya](respon)
+    - [feedback](respon)
+- intent: nama_user
+  examples: |
+    - nama saya [adit](nama)
+    - saya bernama [adit](nama)
+    - kamu bisa panggil saya [aditya tri ananda](nama)
+    - [nama](nama)
+- intent: pendapat_user
+  examples: |
+    - menurut saya [Keren botnya semoga bisa lebih baik lagi](pendapat)
+    - saya pikir [Bermanfaat dan keren sekali](pendapat)
+    - saya berpendapat [keren](pendapat)
+- synonym: fakultas matematika dan ilmu pengetahuan
+  examples: |
+    - fmipa
+    - FMIPA
+- synonym: fakultas hukum
+  examples: |
+    - FH
+    - fh
+- synonym: fakultas ekonomi
+  examples: |
+    - fe
+    - FE
 - synonym: pertama
   examples: |
     - I
@@ -414,14 +445,6 @@ nlu:
     - empat
     - 4
     - IV
-- synonym: fakultas ekonomi
-  examples: |
-    - FE
-    - fe
-- synonym: fakultas hukum
-  examples: |
-    - FH
-    - fh
 - synonym: fakultas teknik
   examples: |
     - FT
@@ -442,10 +465,6 @@ nlu:
   examples: |
     - FISIP
     - fisip
-- synonym: fakultas matematika dan ilmu pengetahuan
-  examples: |
-    - FMIPA
-    - fmipa
 - synonym: fakultas ilmu komputer
   examples: |
     - FASILKOM
@@ -454,23 +473,3 @@ nlu:
   examples: |
     - FKM
     - fkm
-
-- intent: respon_jawaban
-  examples: |
-    - [iya](respon)
-    - [tidak](respon)
-    - [tanya](respon)
-    - [feedback](respon)
-
-- intent: nama_user
-  examples: |
-    - nama saya [adit](nama)
-    - saya bernama [adit]{"entity":"nama"}
-    - kamu bisa panggil saya [aditya tri ananda]{"entity":"nama"}
-    - [nama]{"entity":"nama"}
-
-- intent: pendapat_user
-  examples: |
-    - menurut saya [Keren botnya semoga bisa lebih baik lagi](pendapat)
-    - saya pikir [Bermanfaat dan keren sekali]{"entity":"pendapat"}
-    - saya berpendapat [keren]{"entity":"pendapat"}
