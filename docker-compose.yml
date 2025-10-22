@@ -1,0 +1,17 @@
+services:
+  unsri-bot:
+    build: .
+    ports:
+      - "5005:5005"  # Rasa server
+      - "5055:5055"  # Action server
+    volumes:
+      - ./models:/app/models
+    environment:
+      - RASA_ENDPOINT_URL=http://localhost:5005
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:5005/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 60s
+    restart: unless-stopped

@@ -10,7 +10,7 @@ pipeline:
   max_ngram: 4
 - name: DIETClassifier
   epochs: 100
-  constrain_similarities: True
+  constrain_similarities: true
 - name: EntitySynonymMapper
 - name: ResponseSelector
   epochs: 100
@@ -29,3 +29,4 @@ policies:
 #  core_fallback_action_name: action_default_fallback
 #  enable_fallback_prediction: true
 #- name: TEDPolicy
+assistant_id: 20251021-215645-mad-interval
