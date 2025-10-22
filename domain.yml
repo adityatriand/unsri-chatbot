@@ -1,4 +1,4 @@
-version: '2.0'
+version: '3.1'
 config:
   store_entities_as_slots: true
 session_config:
@@ -33,20 +33,26 @@ entities:
 - pendapat
 slots:
   nama:
-    type: rasa.shared.core.slots.TextSlot
+    type: text
     initial_value: null
-    auto_fill: true
     influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: nama
   pendapat:
-    type: rasa.shared.core.slots.TextSlot
+    type: text
     initial_value: null
-    auto_fill: true
     influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: pendapat
   requested_slot:
-    type: rasa.shared.core.slots.UnfeaturizedSlot
+    type: text
     initial_value: null
-    auto_fill: true
     influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: requested_slot
 responses:
   utter_chitchat/greet:
   - text: Hallo, ada yang bisa saya bantu ?
@@ -1116,10 +1122,7 @@ forms:
     - ask_jumlah_jurusan_fakultas
     - respon_jawaban
     required_slots:
-      nama:
-      - entity: nama
-        intent: nama_user
-        type: from_entity
+    - nama
   pendapat_form:
     ignored_intents:
     - chitchat
@@ -1131,8 +1134,5 @@ forms:
     - ask_jumlah_jurusan_fakultas
     - respon_jawaban
     required_slots:
-      pendapat:
-      - entity: pendapat
-        intent: pendapat_user
-        type: from_entity
+    - pendapat
 e2e_actions: []
